@@ -1,0 +1,139 @@
+<link rel="stylesheet" type="text/html" src="css/crud.css" />
+<div id="createWork" class="oj-flex oj-sm-flex-direction-column " style="margin-left:30px;">
+  <!-- <div class="work-unit-aggregate">
+    <h5>Create New Work Unit</h5>
+  </div><br /> -->
+  <div class="oj-sm-odd-cols-12 oj-md-odd-cols-3 oj-flex-items-pad">
+    <div class="oj-flex">
+      <div class="oj-flex-item">
+        <oj-label for="text-input">Event Name</oj-label>
+        <oj-input-text id="text-input" value="{{eventName}}"></oj-input-text>
+      </div>
+      <div class="oj-flex-item">
+        <oj-label for="date">Event Date</oj-label>
+        <oj-input-date id="date" value='{{eventDate}}'>
+        </oj-input-date>
+      </div>
+    </div>
+  </div>
+  <br />
+  <div class="demo-flex-display oj-flex-items-pad">
+    <div class="oj-flex">
+      <div class="oj-flex-item">
+        <oj-label for="select">Category</oj-label>
+        <oj-select-one id="category" value="{{category}}">
+          <oj-option value="Work Unit 1">Work Unit 1</oj-option>
+          <oj-option value="Work Unit 2">Work Unit 2</oj-option>
+          <oj-option value="Work Unit 3">Work Unit 3</oj-option>
+        </oj-select-one>
+      </div>
+      <div class="oj-flex-item sub-category" style="padding-left:54px">
+        <oj-label for="select">Sub Category</oj-label>
+        <oj-select-one id="subCategory" value="{{subCategory}}">
+          <oj-option value="Sub Work Unit 1">Sub Work Unit 1</oj-option>
+          <oj-option value="Sub Work Unit 2">Sub Work Unit 2</oj-option>
+          <oj-option value="Sub Work Unit 3">Sub Work Unit 3</oj-option>
+        </oj-select-one>
+      </div>
+      <div class="oj-flex-item">
+        <oj-label for="text-input">Work Unit Type</oj-label>
+        <oj-input-text id="text-input" value="{{workunitType}}"></oj-input-text>
+      </div>
+      <div class="oj-flex-item">
+        <oj-label for="select">Starting Assignment Pool</oj-label>
+        <oj-select-one id="assignmentPool" value="{{assignmentPool}}">
+          <oj-option value="Assignment Pool 1">Assignment Pool 1</oj-option>
+          <oj-option value="Assignment Pool 2">Assignment Pool 2</oj-option>
+          <oj-option value="Assignment Pool 3">Assignment Pool 3</oj-option>
+        </oj-select-one>
+      </div>
+    </div>
+  </div>
+  <br />
+  <div class="work-unit-aggregate">
+    <h5>Add Property ID</h5>
+  </div><br />
+  <div class="demo-flex-display oj-flex-items-pad">
+    <div class="oj-flex">
+      <div class="oj-flex-item">
+        <oj-label for="text-input">Property ID</oj-label>
+        <oj-input-text id="text-input" value="{{propertyId}}"></oj-input-text>
+      </div>
+      <div class="oj-flex-item">
+        <oj-label for="select">Property Type</oj-label>
+        <oj-select-one id="selectPropertyType" value="{{propertyType}}">
+          <oj-option value="Real Property">Real Property</oj-option>
+          <oj-option value="Old Property">Old Property</oj-option>
+          <oj-option value="New Property">New Property</oj-option>
+        </oj-select-one>
+
+      </div>
+     <div class="oj-flex-item"><oj-button style="padding-top:22px" class="add-row" id='addbutton' on-oj-action="[[addRow]]">Add</oj-button></div>
+     <span style="padding-top:29px">-OR-</span>
+     <div class="oj-flex-item"> <oj-button style="padding-top:22px" class="add-row" id='addWorkUnitButton'>Add From Work Unit</oj-button></div>
+        
+   
+      
+     
+       
+     
+      <br>
+    </div>
+    </br>
+    <br>
+    <div class="oj-flex oj-sm-flex-direction-column">
+      <div class="oj-flex-item">
+        <oj-table id="activityTable" aria-label="Departments Table" data='[[rowDataProvider]]' display="grid"
+          selection-mode='{"row": "single", "column": "single"}' columns-default='{"sortable": "enabled"}'
+          columns='{{columnArray}}' style='width: 100%; height:100%;'>
+        </oj-table>
+      </div>
+    </div>
+    <br>
+  </div>
+  <br />
+  <br />
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <h5>Select Document To Attach</h5>
+      <oj-input-text id="text-input" value="{{fileNames}}"></oj-input-text>
+      <oj-file-picker class='oj-filepicker-custom' select-on='click' on-oj-select='[[selectListener]]'>
+
+        <oj-button slot='trigger'>
+          <span slot='startIcon' class='oj-fwk-icon oj-fwk-icon-arrowbox-n'></span>
+          Upload
+        </oj-button>
+      </oj-file-picker>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-area">Comments:</oj-label>
+      <oj-text-area id="text-area" style="max-width:75%" value="{{comments}}">
+      </oj-text-area>
+    </div>
+  </div>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-button id="btnCancel">Cancel</oj-button>
+      <oj-button class="save" id='save' on-oj-action="[[create]]">Create</oj-button>
+    </div>
+  </div>
+  </div>
+  </script>
+  <script type="text/html" id="propertyId">
+<td>
+  <span data-bind="text: $context.row.propertyId"></span>
+</td>
+</script>
+  <script type="text/html" id="propertyType">
+  <td>
+    <oj-bind-text value="[[$context.row.propertyType]]"></oj-bind-text>
+  </td>
+  </script>
+  <script type="text/html" id="situsAddress">
+    <td>
+      <span data-bind="text: $context.row.situsAddress"></span>
+    </td>
+    </script>

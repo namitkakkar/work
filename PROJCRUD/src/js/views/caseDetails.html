@@ -1,0 +1,85 @@
+<div id="section6" style="width: 1px; min-width: 100%;">
+  <span><label for="caseDetailsTable"><b>&nbsp;&nbsp;Case Details</b></label></span>
+  <div id="multilvltableDemo" class="oj-flex-item">
+    <oj-label id="label" class="oj-label-inline" for="filter">Filter:</oj-label>
+    <oj-input-text id="filter" placeholder="Type to filter" on-raw-value-changed="[[handleValueChanged]]"
+      value="{{filter}}"></oj-input-text>
+    <oj-button id="clearButton" on-oj-action='[[clearClick]]' display='icons' chroming='half'>
+      <span slot='startIcon' class='oj-fwk-icon oj-fwk-icon-cross03'></span>
+      Clear
+    </oj-button>
+    <br>
+
+    <oj-table id="caseDetailsTable" aria-label="Case Details" data='[[caseTblPgDataProvider]]' selected.row='{{selectedRow}}'
+      on-selected-changed='{{selectedChangedListener}}' selection-mode='{"row": "single", "column": "multiple"}'
+      scroll-policy='loadMoreOnScroll' scroll-policy-options='{"fetchSize": 10}' columns='{{columnArrayDetails}}'
+      style="width:100%">
+      <oj-paging-control id="paging" data='[[caseTblPgDataProvider]]' page-size='10' slot='bottom'></oj-paging-control>
+    </oj-table>
+    <script type="text/html" id="Case_Number">
+      <td>
+         <a id="btnGetWrkUntDtl" data-bind="click:function(data, event){$parent.openWrkUntDialog($context.row.Case_Number,data,event)}">
+          <oj-bind-text value="[[$context.row.Case_Number]]">
+          </oj-bind-text>
+         </a>
+      </td>
+    </script>
+  </div>
+  <div id="wrkUntDlgWrapper">
+    <oj-popup positionAlign="vertical:bottom;horizontal:end"
+      style="width: 90%; top: 431.042px; left: 35.4167px; bottom: auto; right: auto;" id="wrkUntDlg"
+      dialog-title="Work Unit Details" modality="modeless">
+      <div slot="body">
+        <oj-label id="wrkUntlabel" class="oj-label-inline" for="wrkUntFilter">Filter:</oj-label>
+        <oj-input-text id="wrkUntFilter" placeholder="Type to filter"
+          on-raw-value-changed="[[handleWrkUnitValueChanged]]" value="{{wrkUntFilter}}"></oj-input-text>
+        <oj-button id="wrkUntclearButton" on-oj-action='[[clearWrkUnitClick]]' display='icons' chroming='half'>
+          <span slot='startIcon' class='oj-fwk-icon oj-fwk-icon-cross03'></span>
+          Clear
+        </oj-button>
+        <br>
+        <oj-table id="wrkUntDetTbl" aria-label="Work Unit Details" data='[[wrkUnitsTblData]]'
+          selected.row='{{selectedWrkUntRow}}' on-selected-changed='{{selectedWrkUntChangedListener}}'
+          selection-mode='{"row": "single", "column": "multiple"}' scroll-policy='loadMoreOnScroll'
+          scroll-policy-options='{"fetchSize": 10}' columns='{{wrkunittblcolumnArray}}' style="width:100%">
+        </oj-table>
+        <script type="text/html" id="workUnitNumber">
+                <td>
+                   <a id="propListLnk" data-bind="click:function(data, event){$parent.openPropDetailsDialog($context.row.Work_Unit_Number,data,event)}">
+                    <oj-bind-text value="[[$context.row.Work_Unit_Number]]">
+                    </oj-bind-text>
+                   </a>
+                </td>
+              </script>
+      </div>
+      <div slot="footer">
+        <oj-button id="okButton" on-oj-action="[[handleOKClose]]">OK</oj-button>
+      </div>
+    </oj-popup>
+  </div>
+  <!-- prop list dialog -->
+  <div id="proplistDlgWrapper">
+      
+    <oj-popup style="width: 90%; top: 431.042px; left: 35.4167px; bottom: auto; right: auto;" id="proplistDlg"
+      dialog-title="Property List Details" modality="modeless">
+      <div slot="body">
+          <oj-label id="propLstlabel" class="oj-label-inline" for="propListFilter">Filter:</oj-label>
+          <oj-input-text id="propListFilter" placeholder="Type to filter" on-raw-value-changed="[[handlePropListFilterValueChanged]]" value="{{propListFilter}}"></oj-input-text>
+          <oj-button id="propListclearButton"
+                    on-oj-action='[[clearPropListClick]]'
+                    display='icons'
+                    chroming='half'>
+              <span slot='startIcon' class='oj-fwk-icon oj-fwk-icon-cross03'></span>
+              Clear
+          </oj-button>
+          <br>
+        <oj-table id="proplistDetTbl" aria-label="Property List Details" data='[[proplistTblData]]'
+          selection-mode='{"row": "single", "column": "multiple"}' scroll-policy='loadMoreOnScroll'
+          scroll-policy-options='{"fetchSize": 10}' columns='{{proplisttblcolumnArray}}' style="width:100%">
+        </oj-table>
+      </div>
+      <div slot="footer">
+        <oj-button id="okButton" on-oj-action="[[handlePropTblOKClose]]">OK</oj-button>
+      </div>
+    </oj-popup>
+  </div>

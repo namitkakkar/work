@@ -1,0 +1,26 @@
+[{"attr": {"id": "t1",
+              "name": "Task 1",
+              "resource": "Larry",
+              "start": "1/1/2014",
+              "end": "10/1/2014"
+             },
+     "children": [
+                     {"attr": {"detail": "Various coding subtasks",
+                               "complete": "20",
+                               "incomplete": "80"
+                              }}
+                 ]
+    },
+    {"attr": {"id": "t2",
+              "name": "Task 2",
+              "resource": "John",
+              "start": "4/1/2014",
+              "end": "12/1/2014"
+             },
+     "children": [
+                     {"attr": {"detail": "Various testing subtasks",
+                               "complete": "50",
+                               "incomplete": "50"
+                              }}
+                 ]
+}]

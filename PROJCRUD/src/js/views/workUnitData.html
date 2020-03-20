@@ -1,0 +1,27 @@
+<div id="section3" style="width: 1px; min-width: 100%;">
+  <div id='section3_1' class="oj-flex oj-sm-justify-content-space-between">
+    <div id='section3_2' class="oj-flex-item">
+      <!-- <div> Work Unit:</div> -->
+      <span style="font-weight:bold">
+        <!-- <label><b>&nbsp;&nbsp;Work Unit#:</b></label> -->
+        <label for="wrkUnitLbl"><b>&nbsp;&nbsp;Work Unit#:</b></label>
+        <oj-bind-if test="[[workUnitNumber!==undefined]]">
+          <span data-bind="text:workUnitNumber"> </span>
+        </oj-bind-if>
+      </span>
+    </div>
+    <div id='section3_3' class="oj-flex-item" style="text-align: right;">
+      <oj-button id='wuNdBtn' on-oj-action='[[buttonClick]]'>Work Unit Notes</oj-button>
+      <oj-button id='adVwDocBtn' on-oj-action='[[buttonClick]]'>Add/View Documents</oj-button>
+      <oj-button id='wuSumBtnTxt' on-oj-action='[[buttonClick]]'>Work Unit Summary</oj-button>
+    </div>
+  </div>
+</div>
+<div id="section4" style="width: 1px; min-width: 100%;">
+  <div id="wrkunittblsec" class="demo-padding demo-container">
+    <oj-table id="wrkunitTable" aria-label="Case Details" data='[[workUnitDataProvider]]'
+      selection-mode='{"row": "single", "column": "multiple"}' scroll-policy='loadMoreOnScroll'
+      columns='[[workUnitColumnArray]]' scroll-policy-options='{"fetchSize": 10}' columns='' style="width:100%">
+    </oj-table>
+  </div>
+</div><br /><br />

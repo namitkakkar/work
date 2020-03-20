@@ -1,0 +1,53 @@
+
+<link rel="stylesheet" type="text/html" src="css/crud.css"/>
+<div id="tableDemo1" class="oj-flex oj-sm-flex-direction-column " style="margin-left:30px;">
+    <div class="work-unit-aggregate"><h5>Edit Work Unit Aggregate</h5></div><br/>
+    <div class="oj-sm-odd-cols-12 oj-md-odd-cols-4 oj-flex-items-pad">       
+        <div class="oj-flex">
+          <div class="oj-flex-item">
+            <oj-label for="select">Property Type</oj-label>
+              <!-- <oj-select-one id="basicSelect" value="{{propertyType}}" style="max-width:20em">
+                  <oj-option value="Real Property">Real Property</oj-option>
+                  <oj-option value="Old Property">Old Property</oj-option>
+                  <oj-option value="New Property">New Property</oj-option>
+                </oj-select-one> -->
+              <oj-select-one id="basicSelect" options=[[propertyData]] value="{{propertyType}}" style="max-width:20em">
+                  
+                  <!-- <oj-option value="Old Property">Old Property</oj-option>
+                  <oj-option value="New Property">New Property</oj-option> -->
+                </oj-select-one>
+              </div>
+          <div class="oj-flex-item">
+            <oj-label for="text-input">Add AIN</oj-label>
+            <oj-input-text id="text-input" value="{{ain}}" ></oj-input-text>
+            <oj-button class="add-row" id='addbutton' on-oj-action="[[addAin]]">Add</oj-button>
+          </div> 
+        </div>   
+        <br/>
+   
+      <div class="oj-xl-8 oj-lg-8 oj-md-8 oj-flex-item oj-sm-align-items-center">
+          <oj-label for="text-input">Available AIN(s):<oj-bind-text value="[[availableAins]]"></oj-bind-text></oj-label>
+          <br/>
+          <oj-table id="table" aria-label="Departments Table"
+                                      data='[[ainDataProvider]]'
+                                      display = "grid"
+                                      selection-mode='{"row": "single", "column": "single"}'
+                                      columns-default='{"sortable": "enabled"}' 
+                                      columns='{{columnArray}}' 
+                                      style='width: 100%; height:100%;'>
+                                      <template slot="checkTemplate" data-oj-as="cell">
+                                          <oj-button id='removeButton' on-oj-action='[[removeRow]]'>Remove</oj-button>  
+                                      </template>
+
+                                      <!--<oj-paging-control id="paging" data="[[pagingDataProvider]]" page-size="10" slot="bottom">
+                                        </oj-paging-control>-->
+          </oj-table>
+          <br/><br/>
+          <div class="oj-sm-odd-cols-12 oj-md-odd-cols-4 oj-flex-items-pad">
+          <div class="oj-flex-item">
+              <oj-button id="btnCancel"  on-click="[[cancelListener]]">Close</oj-button>
+              <oj-button class="save" id='save' on-oj-action='[[saveAin]]'>Save</oj-button>
+            </div>  
+          </div>
+  </div>
+</div>

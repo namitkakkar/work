@@ -1,0 +1,225 @@
+{
+    "Lov": {
+        "propertyTypeLov": [
+            {
+                "value": "New Property",
+                "label": "New Property"
+            },
+            {
+                "value": "Real Property",
+                "label": "Real Property"
+            },
+            {
+                "value": "Old Property",
+                "label": "Old Property"
+            }
+        ],
+        "caseManagementActivityLov": {
+            "ActivityList": {
+                "subActivity": [
+                    {
+                        "id": "Permits",
+                        "value": "Update Costs",
+                        "label": "Update Costs"
+                    },
+                    {
+                        "id": "Permits",
+                        "value": "Electronic Permits",
+                        "label": "Electronic Permits"
+                    },
+                    {
+                        "id": "Permits",
+                        "value": "Permit Data Entry",
+                        "label": "Permit Data Entry"
+                    },
+                    {
+                        "id": "Create Work Unit",
+                        "value": "Create Work Unit",
+                        "label": "Create Work Unit"
+                    },
+                    {
+                        "id": "Create Work Unit",
+                        "value": "Add Work Unit",
+                        "label": "Add Work Unit"
+                    }
+                ]
+            },
+            "Activity": [
+                {
+                    "value": "Create Work Unit",
+                    "label": "Create Work Unit"
+                },
+                {
+                    "value": "Permits",
+                    "label": "Permits"
+                }
+            ]
+        },
+        "recordMaintananceLov": {
+            "ActivityList": {
+                "subActivity": [
+                    {
+                        "id": "Records",
+                        "value": "Update Costs",
+                        "label": "Update Costs"
+                    },
+                    {
+                        "id": "Records",
+                        "value": "Electronic Permits",
+                        "label": "Electronic Permits"
+                    },
+                    {
+                        "id": "Records",
+                        "value": "Permit Data Entry",
+                        "label": "Permit Data Entry"
+                    },
+                    {
+                        "id": "Maintanance",
+                        "value": "Schedule",
+                        "label": "Schedule"
+                    },
+                    {
+                        "id": "Maintanance",
+                        "value": "Unscheduled",
+                        "label": "Unscheduled"
+                    }
+                ]
+            },
+            "Activity": [
+                {
+                    "value": "Maintanance",
+                    "label": "Maintanance"
+                },
+                {
+                    "value": "Records",
+                    "label": "Records"
+                }
+            ]
+        },
+        "eligibilityDeterminationLov": {
+            "ActivityList": {
+                "subActivity": [
+                    {
+                        "id": "Records",
+                        "value": "Update Costs",
+                        "label": "Update Costs"
+                    },
+                    {
+                        "id": "Records",
+                        "value": "Electronic Permits",
+                        "label": "Electronic Permits"
+                    },
+                    {
+                        "id": "Records",
+                        "value": "Permit Data Entry",
+                        "label": "Permit Data Entry"
+                    },
+                    {
+                        "id": "Maintanance",
+                        "value": "Schedule",
+                        "label": "Schedule"
+                    },
+                    {
+                        "id": "Maintanance",
+                        "value": "Unscheduled",
+                        "label": "Unscheduled"
+                    }
+                ]
+            },
+            "Activity": [
+                {
+                    "value": "Maintanance",
+                    "label": "Maintanance"
+                },
+                {
+                    "value": "Records",
+                    "label": "Records"
+                }
+            ]
+        },
+
+        "appraisalLov": {
+            "ActivityList": {
+                "subActivity": [
+                    {
+                        "id": "Records",
+                        "value": "Update Costs",
+                        "label": "Update Costs"
+                    },
+                    {
+                        "id": "Records",
+                        "value": "Electronic Permits",
+                        "label": "Electronic Permits"
+                    },
+                    {
+                        "id": "Records",
+                        "value": "Permit Data Entry",
+                        "label": "Permit Data Entry"
+                    },
+                    {
+                        "id": "Maintanance",
+                        "value": "Schedule",
+                        "label": "Schedule"
+                    },
+                    {
+                        "id": "Maintanance",
+                        "value": "Unscheduled",
+                        "label": "Unscheduled"
+                    }
+                ]
+            },
+            "Activity": [
+                {
+                    "value": "Maintanance",
+                    "label": "Maintanance"
+                },
+                {
+                    "value": "Records",
+                    "label": "Records"
+                }
+            ]
+        },
+
+        "assessmentLov": {
+            "ActivityList": {
+                "subActivity": [
+                    {
+                        "id": "Records",
+                        "value": "Update Costs",
+                        "label": "Update Costs"
+                    },
+                    {
+                        "id": "Records",
+                        "value": "Electronic Permits",
+                        "label": "Electronic Permits"
+                    },
+                    {
+                        "id": "Records",
+                        "value": "Permit Data Entry",
+                        "label": "Permit Data Entry"
+                    },
+                    {
+                        "id": "Maintanance",
+                        "value": "Schedule",
+                        "label": "Schedule"
+                    },
+                    {
+                        "id": "Maintanance",
+                        "value": "Unscheduled",
+                        "label": "Unscheduled"
+                    }
+                ]
+            },
+            "Activity": [
+                {
+                    "value": "Maintanance",
+                    "label": "Maintanance"
+                },
+                {
+                    "value": "Records",
+                    "label": "Records"
+                }
+            ]
+        }
+    }
+}

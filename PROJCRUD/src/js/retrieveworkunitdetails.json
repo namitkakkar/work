@@ -1,0 +1,2330 @@
+{
+   "Header": {
+      "operationStatus": "SUCCESS",
+      "instanceId": "5450393"
+   },
+   "WorkUnitDetail": [{
+      "WorkUnitInstanceId": 89883,
+      "WorkUnitRoutingInstanceId": 264727,
+      "BusinessEventDate": "2019-09-03T00:00:00.000-07:00",
+      "Category": "New Construction",
+      "SubCategory": "Permits",
+      "WorkUnitType": "New Construction",
+      "WorkUnitStatus": "WAITING_PERFORM",
+      "AssignmentPool": "Permit Data Entry",
+      "CaseId": 213,
+      "CaseNumber": "C1906-1000212",
+      "WorkUnitNumber": "WU1909-1089882",
+      "AINList": {
+         "AIN": [
+            {
+               "ID": 89907,
+               "Aoid": 24456839,
+               "AIN": "4297390000",
+               "PropertyType": "PP",
+               "StageList": {
+                  "stage": [
+                     {
+                        "Stage": "Records Maintenance",
+                        "ActivityList": {
+                           "Activity": [
+                              {
+                                 "WorkUnitActivityInstanceId": 7261349,
+                                 "UIResourceId": "/WEB-INF/btf/amp-gcm-cost-update-adv-activity-btf.xml#amp-gcm-cost-update-adv-activity-btf",
+                                 "ActivityName": "Update Costs",
+                                 "OperationFlag": "N",
+                                 "InsertLogFlag": "N",
+                                 "ActivityGroupName": "Data Entry",
+                                 "CreatedBy": "DT01_EPPIC",
+                                 "PreConfiguredFlag": "Y",
+                                 "OvertimeFlag": "N",
+                                 "ProgramName": "amp_prog.ps.persist_update_cost_info",
+                                 "Points": 1,
+                                 "HasPayload": "Y",
+                                 "AdvancedActivity": {
+                                    "ValueSetList": [
+                                       {
+                                          "@Name": "CostSummaryCurrentData",
+                                          "ValueSet": [
+                                             {
+                                                "Key": "AinChanged",
+                                                "Value": "N"
+                                             },
+                                             {
+                                                "Key": "SitusAddressChanged",
+                                                "Value": "N"
+                                             },
+                                             {
+                                                "Key": "Name"
+                                             },
+                                             {
+                                                "Key": "HeaderDba",
+                                                "Value": "CRENSHAW SHELL AND MINI MART"
+                                             },
+                                             {
+                                                "Key": "Year"
+                                             },
+                                             {
+                                                "Key": "Coid"
+                                             },
+                                             {
+                                                "Key": "Vsc"
+                                             },
+                                             {
+                                                "Key": "FilingType"
+                                             },
+                                             {
+                                                "Key": "LastAudit"
+                                             },
+                                             {
+                                                "Key": "LastAuditStatus"
+                                             },
+                                             {
+                                                "Key": "EfilePin"
+                                             },
+                                             {
+                                                "Key": "AccountForm",
+                                                "Value": "GASH"
+                                             },
+                                             {
+                                                "Key": "Bcc",
+                                                "Value": "5541-Service Stations (Major Oil - POS/Signs only)"
+                                             },
+                                             {
+                                                "Key": "Remarks"
+                                             },
+                                             {
+                                                "Key": "Remarks1"
+                                             },
+                                             {
+                                                "Key": "Remarks2"
+                                             },
+                                             {
+                                                "Key": "AssembleWith"
+                                             },
+                                             {
+                                                "Key": "Owner1"
+                                             },
+                                             {
+                                                "Key": "Owner2"
+                                             },
+                                             {
+                                                "Key": "Dba",
+                                                "Value": "CRENSHAW SHELL AND MINI MART"
+                                             },
+                                             {
+                                                "Key": "CareOf"
+                                             },
+                                             {
+                                                "Key": "MailingAddress"
+                                             },
+                                             {
+                                                "Key": "MailingNumber",
+                                                "Value": "3645"
+                                             },
+                                             {
+                                                "Key": "MailingFract"
+                                             },
+                                             {
+                                                "Key": "MailingDir"
+                                             },
+                                             {
+                                                "Key": "MailingStName",
+                                                "Value": "CRENSHAW BLVD"
+                                             },
+                                             {
+                                                "Key": "MailingSuite"
+                                             },
+                                             {
+                                                "Key": "MailingCity",
+                                                "Value": "LOS ANGELES"
+                                             },
+                                             {
+                                                "Key": "State",
+                                                "Value": "CA"
+                                             },
+                                             {
+                                                "Key": "Zip",
+                                                "Value": "900000016"
+                                             },
+                                             {
+                                                "Key": "Country",
+                                                "Value": "USA"
+                                             },
+                                             {
+                                                "Key": "SitusAddress"
+                                             },
+                                             {
+                                                "Key": "SitusNumber",
+                                                "Value": "3645"
+                                             },
+                                             {
+                                                "Key": "SitusFrct"
+                                             },
+                                             {
+                                                "Key": "situsDir"
+                                             },
+                                             {
+                                                "Key": "situsStreet",
+                                                "Value": "CRENSHAW BLVD"
+                                             },
+                                             {
+                                                "Key": "situsSuite"
+                                             },
+                                             {
+                                                "Key": "situsCity",
+                                                "Value": "LOS ANGELES"
+                                             },
+                                             {
+                                                "Key": "routingIndex",
+                                                "Value": "2320"
+                                             },
+                                             {
+                                                "Key": "situsIndex",
+                                                "Value": "2320"
+                                             },
+                                             {
+                                                "Key": "roleCode",
+                                                "Value": "U"
+                                             },
+                                             {
+                                                "Key": "mapBookPageParcel",
+                                                "Value": "5046022017"
+                                             },
+                                             {
+                                                "Key": "tra",
+                                                "Value": "00401"
+                                             },
+                                             {
+                                                "Key": "agentCareOf"
+                                             },
+                                             {
+                                                "Key": "agentMailingAddress"
+                                             },
+                                             {
+                                                "Key": "agentMailingNum"
+                                             },
+                                             {
+                                                "Key": "agentMailingFrct"
+                                             },
+                                             {
+                                                "Key": "agentMailingDir"
+                                             },
+                                             {
+                                                "Key": "agentMailingStName"
+                                             },
+                                             {
+                                                "Key": "agentMailingSuite"
+                                             },
+                                             {
+                                                "Key": "agentCity"
+                                             },
+                                             {
+                                                "Key": "agentState"
+                                             },
+                                             {
+                                                "Key": "agentZipCode"
+                                             },
+                                             {
+                                                "Key": "agentCountry"
+                                             }
+                                          ]
+                                       },
+                                       {
+                                          "@Name": "CostSummaryExistingData",
+                                          "ValueSet": [
+                                             {
+                                                "Key": "Name"
+                                             },
+                                             {
+                                                "Key": "HeaderDba",
+                                                "Value": "CRENSHAW SHELL AND MINI MART"
+                                             },
+                                             {
+                                                "Key": "Year",
+                                                "Value": "2019"
+                                             },
+                                             {
+                                                "Key": "Coid",
+                                                "Value": "4297390000"
+                                             },
+                                             {
+                                                "Key": "Vsc",
+                                                "Value": "SNT"
+                                             },
+                                             {
+                                                "Key": "FilingType",
+                                                "Value": "PPIP"
+                                             },
+                                             {
+                                                "Key": "LastAudit"
+                                             },
+                                             {
+                                                "Key": "LastAuditStatus"
+                                             },
+                                             {
+                                                "Key": "EfilePin",
+                                                "Value": "147821"
+                                             },
+                                             {
+                                                "Key": "AccountForm",
+                                                "Value": "GASH"
+                                             },
+                                             {
+                                                "Key": "Bcc",
+                                                "Value": "5541-Service Stations (Major Oil - POS/Signs only)"
+                                             },
+                                             {
+                                                "Key": "Remarks"
+                                             },
+                                             {
+                                                "Key": "Remarks1"
+                                             },
+                                             {
+                                                "Key": "Remarks2"
+                                             },
+                                             {
+                                                "Key": "AssembleWith"
+                                             },
+                                             {
+                                                "Key": "Owner1"
+                                             },
+                                             {
+                                                "Key": "Owner2"
+                                             },
+                                             {
+                                                "Key": "Dba",
+                                                "Value": "CRENSHAW SHELL AND MINI MART"
+                                             },
+                                             {
+                                                "Key": "CareOf"
+                                             },
+                                             {
+                                                "Key": "MailingAddress"
+                                             },
+                                             {
+                                                "Key": "MailingNumber",
+                                                "Value": "3645"
+                                             },
+                                             {
+                                                "Key": "MailingFract"
+                                             },
+                                             {
+                                                "Key": "MailingDir"
+                                             },
+                                             {
+                                                "Key": "MailingStName",
+                                                "Value": "CRENSHAW BLVD"
+                                             },
+                                             {
+                                                "Key": "MailingSuite"
+                                             },
+                                             {
+                                                "Key": "MailingCity",
+                                                "Value": "LOS ANGELES"
+                                             },
+                                             {
+                                                "Key": "State",
+                                                "Value": "CA"
+                                             },
+                                             {
+                                                "Key": "Zip"
+                                             },
+                                             {
+                                                "Key": "Country",
+                                                "Value": "USA"
+                                             },
+                                             {
+                                                "Key": "SitusAddress",
+                                                "Value": "3645   CRENSHAW BLVD"
+                                             },
+                                             {
+                                                "Key": "SitusNumber",
+                                                "Value": "3645"
+                                             },
+                                             {
+                                                "Key": "SitusFrct"
+                                             },
+                                             {
+                                                "Key": "situsDir"
+                                             },
+                                             {
+                                                "Key": "situsStreet",
+                                                "Value": "CRENSHAW BLVD"
+                                             },
+                                             {
+                                                "Key": "situsSuite"
+                                             },
+                                             {
+                                                "Key": "situsCity",
+                                                "Value": "LOS ANGELES"
+                                             },
+                                             {
+                                                "Key": "routingIndex",
+                                                "Value": "2320"
+                                             },
+                                             {
+                                                "Key": "situsIndex",
+                                                "Value": "2320"
+                                             },
+                                             {
+                                                "Key": "roleCode",
+                                                "Value": "U"
+                                             },
+                                             {
+                                                "Key": "mapBookPageParcel",
+                                                "Value": "5046022017"
+                                             },
+                                             {
+                                                "Key": "tra",
+                                                "Value": "00401"
+                                             },
+                                             {
+                                                "Key": "agentCareOf"
+                                             },
+                                             {
+                                                "Key": "agentMailingAddress"
+                                             },
+                                             {
+                                                "Key": "agentMailingNum"
+                                             },
+                                             {
+                                                "Key": "agentMailingFrct"
+                                             },
+                                             {
+                                                "Key": "agentMailingDir"
+                                             },
+                                             {
+                                                "Key": "agentMailingStName"
+                                             },
+                                             {
+                                                "Key": "agentMailingSuite"
+                                             },
+                                             {
+                                                "Key": "agentCity"
+                                             },
+                                             {
+                                                "Key": "agentState"
+                                             },
+                                             {
+                                                "Key": "agentZipCode"
+                                             },
+                                             {
+                                                "Key": "agentCountry"
+                                             }
+                                          ]
+                                       },
+                                       {
+                                          "@Name": "CostSummaryHeader",
+                                          "ValueSet": [
+                                             {
+                                                "Key": "Nav"
+                                             },
+                                             {
+                                                "Key": "AssessedFlag",
+                                                "Value": "T"
+                                             },
+                                             {
+                                                "Key": "B181"
+                                             },
+                                             {
+                                                "Key": "TIAllowance"
+                                             },
+                                             {
+                                                "Key": "Amount"
+                                             },
+                                             {
+                                                "Key": "aeYearCount",
+                                                "Value": "0"
+                                             },
+                                             {
+                                                "Key": "PPValue"
+                                             },
+                                             {
+                                                "Key": "FixtValue"
+                                             }
+                                          ],
+                                          "Level2ValueSetList": [
+                                             {
+                                                "@Name": "detailRow42666",
+                                                "ValueSet": [
+                                                   {
+                                                      "Key": "Completed",
+                                                      "Value": "N"
+                                                   },
+                                                   {
+                                                      "Key": "PropertyType",
+                                                      "Value": "42"
+                                                   },
+                                                   {
+                                                      "Key": "PropertyTypeRef",
+                                                      "Value": "29766"
+                                                   },
+                                                   {
+                                                      "Key": "Description",
+                                                      "Value": "Leasehold Fixtures"
+                                                   },
+                                                   {
+                                                      "Key": "AdditionalDescription"
+                                                   },
+                                                   {
+                                                      "Key": "Yrlf",
+                                                      "Value": "12"
+                                                   },
+                                                   {
+                                                      "Key": "Fx",
+                                                      "Value": "100"
+                                                   },
+                                                   {
+                                                      "Key": "CalcReportedCost",
+                                                      "Value": "11129"
+                                                   },
+                                                   {
+                                                      "Key": "CalcAdjustedCost",
+                                                      "Value": "0"
+                                                   },
+                                                   {
+                                                      "Key": "CalcTotalValue",
+                                                      "Value": "0"
+                                                   }
+                                                ],
+                                                "Level3ValueSetList": [
+                                                   {
+                                                      "ValueSet": [
+                                                         {
+                                                            "Key": "PropertyType",
+                                                            "Value": "42"
+                                                         },
+                                                         {
+                                                            "Key": "PropertyTypeRef",
+                                                            "Value": "29766"
+                                                         },
+                                                         {
+                                                            "Key": "Yrlf",
+                                                            "Value": "12"
+                                                         },
+                                                         {
+                                                            "Key": "Fx",
+                                                            "Value": "100"
+                                                         },
+                                                         {
+                                                            "Key": "DetailYear",
+                                                            "Value": "2006"
+                                                         },
+                                                         {
+                                                            "Key": "PriorCost",
+                                                            "Value": "1245"
+                                                         },
+                                                         {
+                                                            "Key": "ReportedCost",
+                                                            "Value": "1245"
+                                                         },
+                                                         {
+                                                            "Key": "AdjustedCost",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "TrendFactor",
+                                                            "Value": "25"
+                                                         }
+                                                      ]
+                                                   },
+                                                   {
+                                                      "ValueSet": [
+                                                         {
+                                                            "Key": "PropertyType",
+                                                            "Value": "42"
+                                                         },
+                                                         {
+                                                            "Key": "PropertyTypeRef",
+                                                            "Value": "29766"
+                                                         },
+                                                         {
+                                                            "Key": "Yrlf",
+                                                            "Value": "12"
+                                                         },
+                                                         {
+                                                            "Key": "Fx",
+                                                            "Value": "100"
+                                                         },
+                                                         {
+                                                            "Key": "DetailYear",
+                                                            "Value": "2003"
+                                                         },
+                                                         {
+                                                            "Key": "PriorCost",
+                                                            "Value": "4500"
+                                                         },
+                                                         {
+                                                            "Key": "ReportedCost",
+                                                            "Value": "4500"
+                                                         },
+                                                         {
+                                                            "Key": "AdjustedCost",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "TrendFactor",
+                                                            "Value": "14"
+                                                         }
+                                                      ]
+                                                   },
+                                                   {
+                                                      "ValueSet": [
+                                                         {
+                                                            "Key": "PropertyType",
+                                                            "Value": "42"
+                                                         },
+                                                         {
+                                                            "Key": "PropertyTypeRef",
+                                                            "Value": "29766"
+                                                         },
+                                                         {
+                                                            "Key": "Yrlf",
+                                                            "Value": "12"
+                                                         },
+                                                         {
+                                                            "Key": "Fx",
+                                                            "Value": "100"
+                                                         },
+                                                         {
+                                                            "Key": "DetailYear",
+                                                            "Value": "2002"
+                                                         },
+                                                         {
+                                                            "Key": "PriorCost",
+                                                            "Value": "1284"
+                                                         },
+                                                         {
+                                                            "Key": "ReportedCost",
+                                                            "Value": "1284"
+                                                         },
+                                                         {
+                                                            "Key": "AdjustedCost",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "TrendFactor",
+                                                            "Value": "14"
+                                                         }
+                                                      ]
+                                                   },
+                                                   {
+                                                      "ValueSet": [
+                                                         {
+                                                            "Key": "PropertyType",
+                                                            "Value": "42"
+                                                         },
+                                                         {
+                                                            "Key": "PropertyTypeRef",
+                                                            "Value": "29766"
+                                                         },
+                                                         {
+                                                            "Key": "Yrlf",
+                                                            "Value": "12"
+                                                         },
+                                                         {
+                                                            "Key": "Fx",
+                                                            "Value": "100"
+                                                         },
+                                                         {
+                                                            "Key": "DetailYear",
+                                                            "Value": "2001"
+                                                         },
+                                                         {
+                                                            "Key": "PriorCost",
+                                                            "Value": "4100"
+                                                         },
+                                                         {
+                                                            "Key": "ReportedCost",
+                                                            "Value": "4100"
+                                                         },
+                                                         {
+                                                            "Key": "AdjustedCost",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "TrendFactor",
+                                                            "Value": "14"
+                                                         }
+                                                      ]
+                                                   }
+                                                ]
+                                             },
+                                             {
+                                                "@Name": "detailRow42668",
+                                                "ValueSet": [
+                                                   {
+                                                      "Key": "Completed",
+                                                      "Value": "N"
+                                                   },
+                                                   {
+                                                      "Key": "PropertyType",
+                                                      "Value": "45"
+                                                   },
+                                                   {
+                                                      "Key": "PropertyTypeRef",
+                                                      "Value": "29773"
+                                                   },
+                                                   {
+                                                      "Key": "Description",
+                                                      "Value": "Machinery & Equipment"
+                                                   },
+                                                   {
+                                                      "Key": "AdditionalDescription"
+                                                   },
+                                                   {
+                                                      "Key": "Yrlf",
+                                                      "Value": "25"
+                                                   },
+                                                   {
+                                                      "Key": "Fx",
+                                                      "Value": "100"
+                                                   },
+                                                   {
+                                                      "Key": "CalcReportedCost",
+                                                      "Value": "220000"
+                                                   },
+                                                   {
+                                                      "Key": "CalcAdjustedCost",
+                                                      "Value": "0"
+                                                   },
+                                                   {
+                                                      "Key": "CalcTotalValue",
+                                                      "Value": "0"
+                                                   }
+                                                ],
+                                                "Level3ValueSetList": [
+                                                   {
+                                                      "ValueSet": [
+                                                         {
+                                                            "Key": "PropertyType",
+                                                            "Value": "45"
+                                                         },
+                                                         {
+                                                            "Key": "PropertyTypeRef",
+                                                            "Value": "29773"
+                                                         },
+                                                         {
+                                                            "Key": "Yrlf",
+                                                            "Value": "25"
+                                                         },
+                                                         {
+                                                            "Key": "Fx",
+                                                            "Value": "100"
+                                                         },
+                                                         {
+                                                            "Key": "DetailYear",
+                                                            "Value": "2009"
+                                                         },
+                                                         {
+                                                            "Key": "PriorCost",
+                                                            "Value": "220000"
+                                                         },
+                                                         {
+                                                            "Key": "ReportedCost",
+                                                            "Value": "220000"
+                                                         },
+                                                         {
+                                                            "Key": "AdjustedCost",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "TrendFactor",
+                                                            "Value": "83"
+                                                         }
+                                                      ]
+                                                   }
+                                                ]
+                                             },
+                                             {
+                                                "@Name": "detailRow42676",
+                                                "ValueSet": [
+                                                   {
+                                                      "Key": "Completed",
+                                                      "Value": "N"
+                                                   },
+                                                   {
+                                                      "Key": "PropertyType",
+                                                      "Value": "C21"
+                                                   },
+                                                   {
+                                                      "Key": "PropertyTypeRef",
+                                                      "Value": "31936"
+                                                   },
+                                                   {
+                                                      "Key": "Description",
+                                                      "Value": "Machinery & Equipment"
+                                                   },
+                                                   {
+                                                      "Key": "AdditionalDescription"
+                                                   },
+                                                   {
+                                                      "Key": "Yrlf",
+                                                      "Value": "12"
+                                                   },
+                                                   {
+                                                      "Key": "Fx",
+                                                      "Value": "0"
+                                                   },
+                                                   {
+                                                      "Key": "CalcReportedCost",
+                                                      "Value": "43249"
+                                                   },
+                                                   {
+                                                      "Key": "CalcAdjustedCost",
+                                                      "Value": "0"
+                                                   },
+                                                   {
+                                                      "Key": "CalcTotalValue",
+                                                      "Value": "0"
+                                                   }
+                                                ],
+                                                "Level3ValueSetList": [
+                                                   {
+                                                      "ValueSet": [
+                                                         {
+                                                            "Key": "PropertyType",
+                                                            "Value": "C21"
+                                                         },
+                                                         {
+                                                            "Key": "PropertyTypeRef",
+                                                            "Value": "31936"
+                                                         },
+                                                         {
+                                                            "Key": "Yrlf",
+                                                            "Value": "12"
+                                                         },
+                                                         {
+                                                            "Key": "Fx",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "DetailYear",
+                                                            "Value": "2016"
+                                                         },
+                                                         {
+                                                            "Key": "PriorCost",
+                                                            "Value": "4777"
+                                                         },
+                                                         {
+                                                            "Key": "ReportedCost",
+                                                            "Value": "4777"
+                                                         },
+                                                         {
+                                                            "Key": "AdjustedCost",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "TrendFactor",
+                                                            "Value": "89"
+                                                         }
+                                                      ]
+                                                   },
+                                                   {
+                                                      "ValueSet": [
+                                                         {
+                                                            "Key": "PropertyType",
+                                                            "Value": "C21"
+                                                         },
+                                                         {
+                                                            "Key": "PropertyTypeRef",
+                                                            "Value": "31936"
+                                                         },
+                                                         {
+                                                            "Key": "Yrlf",
+                                                            "Value": "12"
+                                                         },
+                                                         {
+                                                            "Key": "Fx",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "DetailYear",
+                                                            "Value": "2006"
+                                                         },
+                                                         {
+                                                            "Key": "PriorCost",
+                                                            "Value": "2014"
+                                                         },
+                                                         {
+                                                            "Key": "ReportedCost",
+                                                            "Value": "2014"
+                                                         },
+                                                         {
+                                                            "Key": "AdjustedCost",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "TrendFactor",
+                                                            "Value": "25"
+                                                         }
+                                                      ]
+                                                   },
+                                                   {
+                                                      "ValueSet": [
+                                                         {
+                                                            "Key": "PropertyType",
+                                                            "Value": "C21"
+                                                         },
+                                                         {
+                                                            "Key": "PropertyTypeRef",
+                                                            "Value": "31936"
+                                                         },
+                                                         {
+                                                            "Key": "Yrlf",
+                                                            "Value": "12"
+                                                         },
+                                                         {
+                                                            "Key": "Fx",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "DetailYear",
+                                                            "Value": "2004"
+                                                         },
+                                                         {
+                                                            "Key": "PriorCost",
+                                                            "Value": "1000"
+                                                         },
+                                                         {
+                                                            "Key": "ReportedCost",
+                                                            "Value": "1000"
+                                                         },
+                                                         {
+                                                            "Key": "AdjustedCost",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "TrendFactor",
+                                                            "Value": "17"
+                                                         }
+                                                      ]
+                                                   },
+                                                   {
+                                                      "ValueSet": [
+                                                         {
+                                                            "Key": "PropertyType",
+                                                            "Value": "C21"
+                                                         },
+                                                         {
+                                                            "Key": "PropertyTypeRef",
+                                                            "Value": "31936"
+                                                         },
+                                                         {
+                                                            "Key": "Yrlf",
+                                                            "Value": "12"
+                                                         },
+                                                         {
+                                                            "Key": "Fx",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "DetailYear",
+                                                            "Value": "2001"
+                                                         },
+                                                         {
+                                                            "Key": "PriorCost",
+                                                            "Value": "4170"
+                                                         },
+                                                         {
+                                                            "Key": "ReportedCost",
+                                                            "Value": "4170"
+                                                         },
+                                                         {
+                                                            "Key": "AdjustedCost",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "TrendFactor",
+                                                            "Value": "14"
+                                                         }
+                                                      ]
+                                                   },
+                                                   {
+                                                      "ValueSet": [
+                                                         {
+                                                            "Key": "PropertyType",
+                                                            "Value": "C21"
+                                                         },
+                                                         {
+                                                            "Key": "PropertyTypeRef",
+                                                            "Value": "31936"
+                                                         },
+                                                         {
+                                                            "Key": "Yrlf",
+                                                            "Value": "12"
+                                                         },
+                                                         {
+                                                            "Key": "Fx",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "DetailYear",
+                                                            "Value": "1998"
+                                                         },
+                                                         {
+                                                            "Key": "PriorCost",
+                                                            "Value": "500"
+                                                         },
+                                                         {
+                                                            "Key": "ReportedCost",
+                                                            "Value": "500"
+                                                         },
+                                                         {
+                                                            "Key": "AdjustedCost",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "TrendFactor",
+                                                            "Value": "14"
+                                                         }
+                                                      ]
+                                                   },
+                                                   {
+                                                      "ValueSet": [
+                                                         {
+                                                            "Key": "PropertyType",
+                                                            "Value": "C21"
+                                                         },
+                                                         {
+                                                            "Key": "PropertyTypeRef",
+                                                            "Value": "31936"
+                                                         },
+                                                         {
+                                                            "Key": "Yrlf",
+                                                            "Value": "12"
+                                                         },
+                                                         {
+                                                            "Key": "Fx",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "DetailYear",
+                                                            "Value": "1997"
+                                                         },
+                                                         {
+                                                            "Key": "PriorCost",
+                                                            "Value": "3725"
+                                                         },
+                                                         {
+                                                            "Key": "ReportedCost",
+                                                            "Value": "3725"
+                                                         },
+                                                         {
+                                                            "Key": "AdjustedCost",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "TrendFactor",
+                                                            "Value": "14"
+                                                         }
+                                                      ]
+                                                   },
+                                                   {
+                                                      "ValueSet": [
+                                                         {
+                                                            "Key": "PropertyType",
+                                                            "Value": "C21"
+                                                         },
+                                                         {
+                                                            "Key": "PropertyTypeRef",
+                                                            "Value": "31936"
+                                                         },
+                                                         {
+                                                            "Key": "Yrlf",
+                                                            "Value": "12"
+                                                         },
+                                                         {
+                                                            "Key": "Fx",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "DetailYear",
+                                                            "Value": "1996"
+                                                         },
+                                                         {
+                                                            "Key": "PriorCost",
+                                                            "Value": "27063"
+                                                         },
+                                                         {
+                                                            "Key": "ReportedCost",
+                                                            "Value": "27063"
+                                                         },
+                                                         {
+                                                            "Key": "AdjustedCost",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "TrendFactor",
+                                                            "Value": "14"
+                                                         }
+                                                      ]
+                                                   }
+                                                ]
+                                             },
+                                             {
+                                                "@Name": "detailRow42678",
+                                                "ValueSet": [
+                                                   {
+                                                      "Key": "Completed",
+                                                      "Value": "N"
+                                                   },
+                                                   {
+                                                      "Key": "PropertyType",
+                                                      "Value": "28"
+                                                   },
+                                                   {
+                                                      "Key": "PropertyTypeRef",
+                                                      "Value": "27825"
+                                                   },
+                                                   {
+                                                      "Key": "Description",
+                                                      "Value": "Machinery & Equipment"
+                                                   },
+                                                   {
+                                                      "Key": "AdditionalDescription"
+                                                   },
+                                                   {
+                                                      "Key": "Yrlf",
+                                                      "Value": "12"
+                                                   },
+                                                   {
+                                                      "Key": "Fx",
+                                                      "Value": "100"
+                                                   },
+                                                   {
+                                                      "Key": "CalcReportedCost",
+                                                      "Value": "184899"
+                                                   },
+                                                   {
+                                                      "Key": "CalcAdjustedCost",
+                                                      "Value": "0"
+                                                   },
+                                                   {
+                                                      "Key": "CalcTotalValue",
+                                                      "Value": "0"
+                                                   }
+                                                ],
+                                                "Level3ValueSetList": [
+                                                   {
+                                                      "ValueSet": [
+                                                         {
+                                                            "Key": "PropertyType",
+                                                            "Value": "28"
+                                                         },
+                                                         {
+                                                            "Key": "PropertyTypeRef",
+                                                            "Value": "27825"
+                                                         },
+                                                         {
+                                                            "Key": "Yrlf",
+                                                            "Value": "12"
+                                                         },
+                                                         {
+                                                            "Key": "Fx",
+                                                            "Value": "100"
+                                                         },
+                                                         {
+                                                            "Key": "DetailYear",
+                                                            "Value": "2015"
+                                                         },
+                                                         {
+                                                            "Key": "PriorCost",
+                                                            "Value": "184899"
+                                                         },
+                                                         {
+                                                            "Key": "ReportedCost",
+                                                            "Value": "184899"
+                                                         },
+                                                         {
+                                                            "Key": "AdjustedCost",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "TrendFactor",
+                                                            "Value": "81"
+                                                         }
+                                                      ]
+                                                   }
+                                                ]
+                                             },
+                                             {
+                                                "@Name": "detailRow42680",
+                                                "ValueSet": [
+                                                   {
+                                                      "Key": "Completed",
+                                                      "Value": "N"
+                                                   },
+                                                   {
+                                                      "Key": "PropertyType",
+                                                      "Value": "73"
+                                                   },
+                                                   {
+                                                      "Key": "PropertyTypeRef",
+                                                      "Value": "31566"
+                                                   },
+                                                   {
+                                                      "Key": "Description",
+                                                      "Value": "Other"
+                                                   },
+                                                   {
+                                                      "Key": "AdditionalDescription"
+                                                   },
+                                                   {
+                                                      "Key": "Yrlf",
+                                                      "Value": "8"
+                                                   },
+                                                   {
+                                                      "Key": "Fx",
+                                                      "Value": "100"
+                                                   },
+                                                   {
+                                                      "Key": "CalcReportedCost",
+                                                      "Value": "12307"
+                                                   },
+                                                   {
+                                                      "Key": "CalcAdjustedCost",
+                                                      "Value": "0"
+                                                   },
+                                                   {
+                                                      "Key": "CalcTotalValue",
+                                                      "Value": "0"
+                                                   }
+                                                ],
+                                                "Level3ValueSetList": [
+                                                   {
+                                                      "ValueSet": [
+                                                         {
+                                                            "Key": "PropertyType",
+                                                            "Value": "73"
+                                                         },
+                                                         {
+                                                            "Key": "PropertyTypeRef",
+                                                            "Value": "31566"
+                                                         },
+                                                         {
+                                                            "Key": "Yrlf",
+                                                            "Value": "8"
+                                                         },
+                                                         {
+                                                            "Key": "Fx",
+                                                            "Value": "100"
+                                                         },
+                                                         {
+                                                            "Key": "DetailYear",
+                                                            "Value": "2016"
+                                                         },
+                                                         {
+                                                            "Key": "PriorCost",
+                                                            "Value": "12307"
+                                                         },
+                                                         {
+                                                            "Key": "ReportedCost",
+                                                            "Value": "12307"
+                                                         },
+                                                         {
+                                                            "Key": "AdjustedCost",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "TrendFactor",
+                                                            "Value": "77"
+                                                         }
+                                                      ]
+                                                   }
+                                                ]
+                                             },
+                                             {
+                                                "@Name": "detailRow42683",
+                                                "ValueSet": [
+                                                   {
+                                                      "Key": "Completed",
+                                                      "Value": "N"
+                                                   },
+                                                   {
+                                                      "Key": "PropertyType",
+                                                      "Value": "46"
+                                                   },
+                                                   {
+                                                      "Key": "PropertyTypeRef",
+                                                      "Value": "27933"
+                                                   },
+                                                   {
+                                                      "Key": "Description",
+                                                      "Value": "Machinery & Equipment"
+                                                   },
+                                                   {
+                                                      "Key": "AdditionalDescription"
+                                                   },
+                                                   {
+                                                      "Key": "Yrlf",
+                                                      "Value": "12"
+                                                   },
+                                                   {
+                                                      "Key": "Fx",
+                                                      "Value": "100"
+                                                   },
+                                                   {
+                                                      "Key": "CalcReportedCost",
+                                                      "Value": "62467"
+                                                   },
+                                                   {
+                                                      "Key": "CalcAdjustedCost",
+                                                      "Value": "0"
+                                                   },
+                                                   {
+                                                      "Key": "CalcTotalValue",
+                                                      "Value": "0"
+                                                   }
+                                                ],
+                                                "Level3ValueSetList": [
+                                                   {
+                                                      "ValueSet": [
+                                                         {
+                                                            "Key": "PropertyType",
+                                                            "Value": "46"
+                                                         },
+                                                         {
+                                                            "Key": "PropertyTypeRef",
+                                                            "Value": "27933"
+                                                         },
+                                                         {
+                                                            "Key": "Yrlf",
+                                                            "Value": "12"
+                                                         },
+                                                         {
+                                                            "Key": "Fx",
+                                                            "Value": "100"
+                                                         },
+                                                         {
+                                                            "Key": "DetailYear",
+                                                            "Value": "2014"
+                                                         },
+                                                         {
+                                                            "Key": "PriorCost",
+                                                            "Value": "32038"
+                                                         },
+                                                         {
+                                                            "Key": "ReportedCost",
+                                                            "Value": "32038"
+                                                         },
+                                                         {
+                                                            "Key": "AdjustedCost",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "TrendFactor",
+                                                            "Value": "73"
+                                                         }
+                                                      ]
+                                                   },
+                                                   {
+                                                      "ValueSet": [
+                                                         {
+                                                            "Key": "PropertyType",
+                                                            "Value": "46"
+                                                         },
+                                                         {
+                                                            "Key": "PropertyTypeRef",
+                                                            "Value": "27933"
+                                                         },
+                                                         {
+                                                            "Key": "Yrlf",
+                                                            "Value": "12"
+                                                         },
+                                                         {
+                                                            "Key": "Fx",
+                                                            "Value": "100"
+                                                         },
+                                                         {
+                                                            "Key": "DetailYear",
+                                                            "Value": "2011"
+                                                         },
+                                                         {
+                                                            "Key": "PriorCost",
+                                                            "Value": "30429"
+                                                         },
+                                                         {
+                                                            "Key": "ReportedCost",
+                                                            "Value": "30429"
+                                                         },
+                                                         {
+                                                            "Key": "AdjustedCost",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "TrendFactor",
+                                                            "Value": "54"
+                                                         }
+                                                      ]
+                                                   }
+                                                ]
+                                             },
+                                             {
+                                                "@Name": "detailRow42688",
+                                                "ValueSet": [
+                                                   {
+                                                      "Key": "Completed",
+                                                      "Value": "N"
+                                                   },
+                                                   {
+                                                      "Key": "PropertyType",
+                                                      "Value": "17"
+                                                   },
+                                                   {
+                                                      "Key": "PropertyTypeRef",
+                                                      "Value": "28962"
+                                                   },
+                                                   {
+                                                      "Key": "Description",
+                                                      "Value": "Unused or Unknown Code (Blank)"
+                                                   },
+                                                   {
+                                                      "Key": "AdditionalDescription"
+                                                   },
+                                                   {
+                                                      "Key": "Yrlf",
+                                                      "Value": "0"
+                                                   },
+                                                   {
+                                                      "Key": "Fx",
+                                                      "Value": "0"
+                                                   },
+                                                   {
+                                                      "Key": "CalcReportedCost",
+                                                      "Value": "221935"
+                                                   },
+                                                   {
+                                                      "Key": "CalcAdjustedCost",
+                                                      "Value": "0"
+                                                   },
+                                                   {
+                                                      "Key": "CalcTotalValue",
+                                                      "Value": "0"
+                                                   }
+                                                ],
+                                                "Level3ValueSetList": [
+                                                   {
+                                                      "ValueSet": [
+                                                         {
+                                                            "Key": "PropertyType",
+                                                            "Value": "17"
+                                                         },
+                                                         {
+                                                            "Key": "PropertyTypeRef",
+                                                            "Value": "28962"
+                                                         },
+                                                         {
+                                                            "Key": "Yrlf",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "Fx",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "DetailYear",
+                                                            "Value": "2017"
+                                                         },
+                                                         {
+                                                            "Key": "PriorCost",
+                                                            "Value": "6000"
+                                                         },
+                                                         {
+                                                            "Key": "ReportedCost",
+                                                            "Value": "6000"
+                                                         },
+                                                         {
+                                                            "Key": "AdjustedCost",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "TrendFactor",
+                                                            "Value": "0"
+                                                         }
+                                                      ]
+                                                   },
+                                                   {
+                                                      "ValueSet": [
+                                                         {
+                                                            "Key": "PropertyType",
+                                                            "Value": "17"
+                                                         },
+                                                         {
+                                                            "Key": "PropertyTypeRef",
+                                                            "Value": "28962"
+                                                         },
+                                                         {
+                                                            "Key": "Yrlf",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "Fx",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "DetailYear",
+                                                            "Value": "2015"
+                                                         },
+                                                         {
+                                                            "Key": "PriorCost",
+                                                            "Value": "57721"
+                                                         },
+                                                         {
+                                                            "Key": "ReportedCost",
+                                                            "Value": "57721"
+                                                         },
+                                                         {
+                                                            "Key": "AdjustedCost",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "TrendFactor",
+                                                            "Value": "0"
+                                                         }
+                                                      ]
+                                                   },
+                                                   {
+                                                      "ValueSet": [
+                                                         {
+                                                            "Key": "PropertyType",
+                                                            "Value": "17"
+                                                         },
+                                                         {
+                                                            "Key": "PropertyTypeRef",
+                                                            "Value": "28962"
+                                                         },
+                                                         {
+                                                            "Key": "Yrlf",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "Fx",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "DetailYear",
+                                                            "Value": "2007"
+                                                         },
+                                                         {
+                                                            "Key": "PriorCost",
+                                                            "Value": "3150"
+                                                         },
+                                                         {
+                                                            "Key": "ReportedCost",
+                                                            "Value": "3150"
+                                                         },
+                                                         {
+                                                            "Key": "AdjustedCost",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "TrendFactor",
+                                                            "Value": "0"
+                                                         }
+                                                      ]
+                                                   },
+                                                   {
+                                                      "ValueSet": [
+                                                         {
+                                                            "Key": "PropertyType",
+                                                            "Value": "17"
+                                                         },
+                                                         {
+                                                            "Key": "PropertyTypeRef",
+                                                            "Value": "28962"
+                                                         },
+                                                         {
+                                                            "Key": "Yrlf",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "Fx",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "DetailYear",
+                                                            "Value": "1998"
+                                                         },
+                                                         {
+                                                            "Key": "PriorCost",
+                                                            "Value": "155064"
+                                                         },
+                                                         {
+                                                            "Key": "ReportedCost",
+                                                            "Value": "155064"
+                                                         },
+                                                         {
+                                                            "Key": "AdjustedCost",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "TrendFactor",
+                                                            "Value": "0"
+                                                         }
+                                                      ]
+                                                   }
+                                                ]
+                                             },
+                                             {
+                                                "@Name": "detailRow42692",
+                                                "ValueSet": [
+                                                   {
+                                                      "Key": "Completed",
+                                                      "Value": "N"
+                                                   },
+                                                   {
+                                                      "Key": "PropertyType",
+                                                      "Value": "22"
+                                                   },
+                                                   {
+                                                      "Key": "PropertyTypeRef",
+                                                      "Value": "29296"
+                                                   },
+                                                   {
+                                                      "Key": "Description",
+                                                      "Value": "Office Furniture & Equipment"
+                                                   },
+                                                   {
+                                                      "Key": "AdditionalDescription"
+                                                   },
+                                                   {
+                                                      "Key": "Yrlf",
+                                                      "Value": "12"
+                                                   },
+                                                   {
+                                                      "Key": "Fx",
+                                                      "Value": "0"
+                                                   },
+                                                   {
+                                                      "Key": "CalcReportedCost",
+                                                      "Value": "7615"
+                                                   },
+                                                   {
+                                                      "Key": "CalcAdjustedCost",
+                                                      "Value": "0"
+                                                   },
+                                                   {
+                                                      "Key": "CalcTotalValue",
+                                                      "Value": "0"
+                                                   }
+                                                ],
+                                                "Level3ValueSetList": [
+                                                   {
+                                                      "ValueSet": [
+                                                         {
+                                                            "Key": "PropertyType",
+                                                            "Value": "22"
+                                                         },
+                                                         {
+                                                            "Key": "PropertyTypeRef",
+                                                            "Value": "29296"
+                                                         },
+                                                         {
+                                                            "Key": "Yrlf",
+                                                            "Value": "12"
+                                                         },
+                                                         {
+                                                            "Key": "Fx",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "DetailYear",
+                                                            "Value": "2013"
+                                                         },
+                                                         {
+                                                            "Key": "PriorCost",
+                                                            "Value": "1357"
+                                                         },
+                                                         {
+                                                            "Key": "ReportedCost",
+                                                            "Value": "1357"
+                                                         },
+                                                         {
+                                                            "Key": "AdjustedCost",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "TrendFactor",
+                                                            "Value": "67"
+                                                         }
+                                                      ]
+                                                   },
+                                                   {
+                                                      "ValueSet": [
+                                                         {
+                                                            "Key": "PropertyType",
+                                                            "Value": "22"
+                                                         },
+                                                         {
+                                                            "Key": "PropertyTypeRef",
+                                                            "Value": "29296"
+                                                         },
+                                                         {
+                                                            "Key": "Yrlf",
+                                                            "Value": "12"
+                                                         },
+                                                         {
+                                                            "Key": "Fx",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "DetailYear",
+                                                            "Value": "2009"
+                                                         },
+                                                         {
+                                                            "Key": "PriorCost",
+                                                            "Value": "4965"
+                                                         },
+                                                         {
+                                                            "Key": "ReportedCost",
+                                                            "Value": "4965"
+                                                         },
+                                                         {
+                                                            "Key": "AdjustedCost",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "TrendFactor",
+                                                            "Value": "40"
+                                                         }
+                                                      ]
+                                                   },
+                                                   {
+                                                      "ValueSet": [
+                                                         {
+                                                            "Key": "PropertyType",
+                                                            "Value": "22"
+                                                         },
+                                                         {
+                                                            "Key": "PropertyTypeRef",
+                                                            "Value": "29296"
+                                                         },
+                                                         {
+                                                            "Key": "Yrlf",
+                                                            "Value": "12"
+                                                         },
+                                                         {
+                                                            "Key": "Fx",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "DetailYear",
+                                                            "Value": "2006"
+                                                         },
+                                                         {
+                                                            "Key": "PriorCost",
+                                                            "Value": "1293"
+                                                         },
+                                                         {
+                                                            "Key": "ReportedCost",
+                                                            "Value": "1293"
+                                                         },
+                                                         {
+                                                            "Key": "AdjustedCost",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "TrendFactor",
+                                                            "Value": "25"
+                                                         }
+                                                      ]
+                                                   }
+                                                ]
+                                             },
+                                             {
+                                                "@Name": "detailRow42696",
+                                                "ValueSet": [
+                                                   {
+                                                      "Key": "Completed",
+                                                      "Value": "N"
+                                                   },
+                                                   {
+                                                      "Key": "PropertyType",
+                                                      "Value": "25"
+                                                   },
+                                                   {
+                                                      "Key": "PropertyTypeRef",
+                                                      "Value": "29351"
+                                                   },
+                                                   {
+                                                      "Key": "Description",
+                                                      "Value": "Computer Equipment"
+                                                   },
+                                                   {
+                                                      "Key": "AdditionalDescription"
+                                                   },
+                                                   {
+                                                      "Key": "Yrlf",
+                                                      "Value": "25"
+                                                   },
+                                                   {
+                                                      "Key": "Fx",
+                                                      "Value": "0"
+                                                   },
+                                                   {
+                                                      "Key": "CalcReportedCost",
+                                                      "Value": "10485"
+                                                   },
+                                                   {
+                                                      "Key": "CalcAdjustedCost",
+                                                      "Value": "0"
+                                                   },
+                                                   {
+                                                      "Key": "CalcTotalValue",
+                                                      "Value": "0"
+                                                   }
+                                                ],
+                                                "Level3ValueSetList": [
+                                                   {
+                                                      "ValueSet": [
+                                                         {
+                                                            "Key": "PropertyType",
+                                                            "Value": "25"
+                                                         },
+                                                         {
+                                                            "Key": "PropertyTypeRef",
+                                                            "Value": "29351"
+                                                         },
+                                                         {
+                                                            "Key": "Yrlf",
+                                                            "Value": "25"
+                                                         },
+                                                         {
+                                                            "Key": "Fx",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "DetailYear",
+                                                            "Value": "2016"
+                                                         },
+                                                         {
+                                                            "Key": "PriorCost",
+                                                            "Value": "1265"
+                                                         },
+                                                         {
+                                                            "Key": "ReportedCost",
+                                                            "Value": "1265"
+                                                         },
+                                                         {
+                                                            "Key": "AdjustedCost",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "TrendFactor",
+                                                            "Value": "39"
+                                                         }
+                                                      ]
+                                                   },
+                                                   {
+                                                      "ValueSet": [
+                                                         {
+                                                            "Key": "PropertyType",
+                                                            "Value": "25"
+                                                         },
+                                                         {
+                                                            "Key": "PropertyTypeRef",
+                                                            "Value": "29351"
+                                                         },
+                                                         {
+                                                            "Key": "Yrlf",
+                                                            "Value": "25"
+                                                         },
+                                                         {
+                                                            "Key": "Fx",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "DetailYear",
+                                                            "Value": "2009"
+                                                         },
+                                                         {
+                                                            "Key": "PriorCost",
+                                                            "Value": "892"
+                                                         },
+                                                         {
+                                                            "Key": "ReportedCost",
+                                                            "Value": "892"
+                                                         },
+                                                         {
+                                                            "Key": "AdjustedCost",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "TrendFactor",
+                                                            "Value": "2"
+                                                         }
+                                                      ]
+                                                   },
+                                                   {
+                                                      "ValueSet": [
+                                                         {
+                                                            "Key": "PropertyType",
+                                                            "Value": "25"
+                                                         },
+                                                         {
+                                                            "Key": "PropertyTypeRef",
+                                                            "Value": "29351"
+                                                         },
+                                                         {
+                                                            "Key": "Yrlf",
+                                                            "Value": "25"
+                                                         },
+                                                         {
+                                                            "Key": "Fx",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "DetailYear",
+                                                            "Value": "2008"
+                                                         },
+                                                         {
+                                                            "Key": "PriorCost",
+                                                            "Value": "8328"
+                                                         },
+                                                         {
+                                                            "Key": "ReportedCost",
+                                                            "Value": "8328"
+                                                         },
+                                                         {
+                                                            "Key": "AdjustedCost",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "TrendFactor",
+                                                            "Value": "2"
+                                                         }
+                                                      ]
+                                                   }
+                                                ]
+                                             },
+                                             {
+                                                "@Name": "detailRow42698",
+                                                "ValueSet": [
+                                                   {
+                                                      "Key": "Completed",
+                                                      "Value": "N"
+                                                   },
+                                                   {
+                                                      "Key": "PropertyType",
+                                                      "Value": "01"
+                                                   },
+                                                   {
+                                                      "Key": "PropertyTypeRef",
+                                                      "Value": "30540"
+                                                   },
+                                                   {
+                                                      "Key": "Description",
+                                                      "Value": "Supplies"
+                                                   },
+                                                   {
+                                                      "Key": "AdditionalDescription",
+                                                      "Value": "SUPPLIES"
+                                                   },
+                                                   {
+                                                      "Key": "Yrlf",
+                                                      "Value": "0"
+                                                   },
+                                                   {
+                                                      "Key": "Fx",
+                                                      "Value": "0"
+                                                   },
+                                                   {
+                                                      "Key": "CalcReportedCost",
+                                                      "Value": "500"
+                                                   },
+                                                   {
+                                                      "Key": "CalcAdjustedCost",
+                                                      "Value": "0"
+                                                   },
+                                                   {
+                                                      "Key": "CalcTotalValue",
+                                                      "Value": "0"
+                                                   }
+                                                ],
+                                                "Level3ValueSetList": [
+                                                   {
+                                                      "ValueSet": [
+                                                         {
+                                                            "Key": "PropertyType",
+                                                            "Value": "01"
+                                                         },
+                                                         {
+                                                            "Key": "PropertyTypeRef",
+                                                            "Value": "30540"
+                                                         },
+                                                         {
+                                                            "Key": "Yrlf",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "Fx",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "DetailYear",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "PriorCost",
+                                                            "Value": "500"
+                                                         },
+                                                         {
+                                                            "Key": "ReportedCost",
+                                                            "Value": "500"
+                                                         },
+                                                         {
+                                                            "Key": "AdjustedCost",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "TrendFactor",
+                                                            "Value": "100"
+                                                         }
+                                                      ]
+                                                   }
+                                                ]
+                                             },
+                                             {
+                                                "@Name": "detailRow42700",
+                                                "ValueSet": [
+                                                   {
+                                                      "Key": "Completed",
+                                                      "Value": "N"
+                                                   },
+                                                   {
+                                                      "Key": "PropertyType",
+                                                      "Value": "23"
+                                                   },
+                                                   {
+                                                      "Key": "PropertyTypeRef",
+                                                      "Value": "29309"
+                                                   },
+                                                   {
+                                                      "Key": "Description",
+                                                      "Value": "Other"
+                                                   },
+                                                   {
+                                                      "Key": "AdditionalDescription"
+                                                   },
+                                                   {
+                                                      "Key": "Yrlf",
+                                                      "Value": "12"
+                                                   },
+                                                   {
+                                                      "Key": "Fx",
+                                                      "Value": "0"
+                                                   },
+                                                   {
+                                                      "Key": "CalcReportedCost",
+                                                      "Value": "8606"
+                                                   },
+                                                   {
+                                                      "Key": "CalcAdjustedCost",
+                                                      "Value": "0"
+                                                   },
+                                                   {
+                                                      "Key": "CalcTotalValue",
+                                                      "Value": "0"
+                                                   }
+                                                ],
+                                                "Level3ValueSetList": [
+                                                   {
+                                                      "ValueSet": [
+                                                         {
+                                                            "Key": "PropertyType",
+                                                            "Value": "23"
+                                                         },
+                                                         {
+                                                            "Key": "PropertyTypeRef",
+                                                            "Value": "29309"
+                                                         },
+                                                         {
+                                                            "Key": "Yrlf",
+                                                            "Value": "12"
+                                                         },
+                                                         {
+                                                            "Key": "Fx",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "DetailYear",
+                                                            "Value": "2009"
+                                                         },
+                                                         {
+                                                            "Key": "PriorCost",
+                                                            "Value": "8606"
+                                                         },
+                                                         {
+                                                            "Key": "ReportedCost",
+                                                            "Value": "8606"
+                                                         },
+                                                         {
+                                                            "Key": "AdjustedCost",
+                                                            "Value": "0"
+                                                         },
+                                                         {
+                                                            "Key": "TrendFactor",
+                                                            "Value": "40"
+                                                         }
+                                                      ]
+                                                   }
+                                                ]
+                                             }
+                                          ]
+                                       },
+                                       {
+                                          "@Name": "CostSummaryDeterminations",
+                                          "ValueSet": [
+                                             {
+                                                "Key": "KeepActive"
+                                             },
+                                             {
+                                                "Key": "Inactivate"
+                                             },
+                                             {
+                                                "Key": "InactivateOpenLine"
+                                             },
+                                             {
+                                                "Key": "InactivateVacant"
+                                             },
+                                             {
+                                                "Key": "Reason"
+                                             },
+                                             {
+                                                "Key": "AlreadyAssessedCompNum"
+                                             },
+                                             {
+                                                "Key": "LeopReferral"
+                                             },
+                                             {
+                                                "Key": "LeasingReferral"
+                                             },
+                                             {
+                                                "Key": "ReferTo"
+                                             },
+                                             {
+                                                "Key": "AuditRequest"
+                                             },
+                                             {
+                                                "Key": "PossibleEscape"
+                                             },
+                                             {
+                                                "Key": "EarlyPossibleEscapeYr"
+                                             },
+                                             {
+                                                "Key": "Taxpayer"
+                                             },
+                                             {
+                                                "Key": "Agent"
+                                             },
+                                             {
+                                                "Key": "LateFilePenalty"
+                                             },
+                                             {
+                                                "Key": "FieldCheck"
+                                             },
+                                             {
+                                                "Key": "SendToUser",
+                                                "Value": "true"
+                                             },
+                                             {
+                                                "Key": "AdditionalCost"
+                                             }
+                                          ]
+                                       }
+                                    ]
+                                 }
+                              },
+                              {
+                                 "WorkUnitActivityInstanceId": 7261350,
+                                 "UIResourceId": "/WEB-INF/btf/amp-edit-permit-advance-activity-btf.xml#amp-edit-permit-advance-activity-btf",
+                                 "ActivityName": "Permit Data Entry",
+                                 "OperationFlag": "N",
+                                 "InsertLogFlag": "N",
+                                 "ActivityGroupName": "Permits",
+                                 "CreatedBy": "DT01_EPPIC",
+                                 "PreConfiguredFlag": "Y",
+                                 "OvertimeFlag": "N",
+                                 "ProgramName": "amp_prog.global_programs.permit_info",
+                                 "Points": 1,
+                                 "HasPayload": "N"
+                              }
+                           ]
+                        }
+                     },
+                     {
+                        "Stage": "Case Management",
+                        "ActivityList": {
+                           "Activity": [
+                              {
+                                 "WorkUnitActivityInstanceId": 7261373,
+                                 "UIResourceId": "/WEB-INF/btf/amp-gcm-wu-create-btf.xml#amp-gcm-wu-create-btf",
+                                 "ActivityName": "Create Work Unit",
+                                 "OperationFlag": "N",
+                                 "InsertLogFlag": "Y",
+                                 "ActivityGroupName": "Manage Work Unit",
+                                 "CreatedBy": "DT01_EPPIC",
+                                 "OvertimeFlag": "N",
+                                 "Points": 1,
+                                 "HasPayload": "N"
+                              },
+                              {
+                                 "WorkUnitActivityInstanceId": 7261374,
+                                 "UIResourceId": "/WEB-INF/btf/amp-gcm-wu-create-btf.xml#amp-gcm-wu-create-btf",
+                                 "ActivityName": "Create Work Unit",
+                                 "OperationFlag": "N",
+                                 "InsertLogFlag": "Y",
+                                 "ActivityGroupName": "Manage Work Unit",
+                                 "CreatedBy": "C176474",
+                                 "OvertimeFlag": "N",
+                                 "Points": 1,
+                                 "HasPayload": "N"
+                              },
+                              {
+                                 "WorkUnitActivityInstanceId": 7261375,
+                                 "UIResourceId": "/WEB-INF/btf/amp-gcm-wu-create-btf.xml#amp-gcm-wu-create-btf",
+                                 "ActivityName": "Create Work Unit",
+                                 "OperationFlag": "N",
+                                 "InsertLogFlag": "Y",
+                                 "ActivityGroupName": "Manage Work Unit",
+                                 "CreatedBy": "C151494",
+                                 "OvertimeFlag": "N",
+                                 "Points": 1,
+                                 "HasPayload": "N"
+                              }
+                           ]
+                        },
+                        "DeterminationList": {
+                           "Determination": [
+                              {
+                                 "WorkUnitDeterminantInstanceId": 272994,
+                                 "DeterminantName": "Create",
+                                 "DisplayType": "C",
+                                 "DeterminantFlag": "Y",
+                                 "OperationFlag": "N",
+                                 "InsertLogFlag": "N",
+                                 "DeterminantLogId": 1414
+                              }
+                           ]
+                        }
+                     },
+                     {
+                        "Stage": "Eligibility Determination"
+                     },
+                     {
+                        "Stage": "Appraisal",
+                        "DeterminationList": {
+                           "Determination": [
+                              {
+                                 "WorkUnitDeterminantInstanceId": 272991,
+                                 "DeterminantName": "Cost Approach",
+                                 "DisplayType": "C",
+                                 "DeterminantFlag": "N",
+                                 "OperationFlag": "N",
+                                 "InsertLogFlag": "N",
+                                 "DeterminantLogId": 1415
+                              },
+                              {
+                                 "WorkUnitDeterminantInstanceId": 272992,
+                                 "DeterminantName": "Market Approach",
+                                 "DisplayType": "C",
+                                 "DeterminantFlag": "N",
+                                 "OperationFlag": "N",
+                                 "InsertLogFlag": "N",
+                                 "DeterminantLogId": 1416
+                              }
+                           ]
+                        },
+                        "RTCodeList": {
+                           "RTCode": [
+                              {
+                                 "WorkUnitRTCodeInstanceId": 7884,
+                                 "RTCodeName": "Income Approach",
+                                 "ReferenceNumber": "Rule 8",
+                                 "ReferenceType": "Property Tax Rule",
+                                 "ReferenceDescription": "The income approach to value is used in conjunction with other approaches when the property under appraisal is typically purchased in anticipation of a money income and either has an established income stream or can be attributed a real or hypothetical income stream by comparison with other properties.",
+                                 "RTCFlag": "N",
+                                 "OperationFlag": "N",
+                                 "InsertLogFlag": "N",
+                                 "RTCLogId": 566,
+                                 "CreatedBy": "DT01_EPPIC"
+                              }
+                           ]
+                        }
+                     },
+                     {
+                        "Stage": "Assessment",
+                        "ActivityList": {
+                           "Activity": [
+                              {
+                                 "WorkUnitActivityInstanceId": 7261351,
+                                 "UIResourceId": "/WEB-INF/btf/amp-edit-rs-advance-activity-btf.xml",
+                                 "ActivityName": "Assessment Impact/Simulator",
+                                 "OperationFlag": "N",
+                                 "InsertLogFlag": "N",
+                                 "ActivityGroupName": "Assessment",
+                                 "CreatedBy": "DT01_EPPIC",
+                                 "PreConfiguredFlag": "Y",
+                                 "OvertimeFlag": "N",
+                                 "ProgramName": "amp_prog.RS.persist_assess_impact",
+                                 "Points": 1,
+                                 "AssessmentImpactFlag": "Y",
+                                 "SingleAdditionFlag": "Y",
+                                 "HasPayload": "N"
+                              },
+                              {
+                                 "WorkUnitActivityInstanceId": 7261352,
+                                 "UIResourceId": "/WEB-INF/btf/amp-gcm-wu-edit-roll-correction-btf.xml# amp-gcm-wu-edit-roll-correction-btf",
+                                 "ActivityName": "Roll Correction",
+                                 "OperationFlag": "N",
+                                 "InsertLogFlag": "N",
+                                 "ActivityGroupName": "Assessment",
+                                 "CreatedBy": "DT01_EPPIC",
+                                 "PreConfiguredFlag": "Y",
+                                 "OvertimeFlag": "N",
+                                 "Points": 1,
+                                 "AssessmentImpactFlag": "Y",
+                                 "SingleAdditionFlag": "Y",
+                                 "HasPayload": "N"
+                              }
+                           ]
+                        },
+                        "DeterminationList": {
+                           "Determination": [
+                              {
+                                 "WorkUnitDeterminantInstanceId": 272993,
+                                 "DeterminantName": "Correction",
+                                 "DisplayType": "C",
+                                 "DeterminantFlag": "N",
+                                 "OperationFlag": "N",
+                                 "InsertLogFlag": "N",
+                                 "DeterminantLogId": 1417
+                              }
+                           ]
+                        },
+                        "RTCodeList": {
+                           "RTCode": [
+                              {
+                                 "WorkUnitRTCodeInstanceId": 7885,
+                                 "RTCodeName": "Roll Corrections",
+                                 "ReferenceNumber": "Rule 263",
+                                 "ReferenceType": "Property Tax Rule",
+                                 "ReferenceDescription": "(a)��(1) Any error or omission not involving the exercise of value judgment which results in an incorrect entry or entries on the roll may be corrected after the roll is delivered to the auditor, provided that the correction is made within four years after the making of the assessment that is being corrected.",
+                                 "RTCFlag": "N",
+                                 "OperationFlag": "N",
+                                 "InsertLogFlag": "N",
+                                 "RTCLogId": 567,
+                                 "CreatedBy": "DT01_EPPIC"
+                              }
+                           ]
+                        }
+                     }
+                  ]
+               }
+            }
+         ]
+      }
+   }]
+}

@@ -1,0 +1,378 @@
+<link rel="stylesheet" type="text/html" src="css/crud.css" />
+<div id="tableDemo1" class="oj-flex oj-sm-flex-direction-column " style="margin-left:30px;">
+ <!--  <div class="work-unit-aggregate">
+    <h5>Permit Entry Form</h5>
+  </div><br /> -->
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-input">Permit Number</oj-label>
+      <oj-input-text id="text-input" value="{{permitNumber}}"></oj-input-text>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="select">Issuing Office</oj-label>
+      <oj-select-one id="issuingOffice" value="{{issuingOffice}}">
+        <oj-option value="Issuing Office 1">Issuing Office 1</oj-option>
+        <oj-option value="Issuing Office 2">Issuing Office 2</oj-option>
+        <oj-option value="Issuing Office 3">Issuing Office 3</oj-option>
+      </oj-select-one>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="date">Permit Issue Date</oj-label>
+      <oj-input-date id="date" value='{{issueDate}}'>
+      </oj-input-date>
+    </div>
+  </div>
+  <br>
+  <hr>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-input">Project Address</oj-label>
+      <oj-input-text id="text-input" value="{{projectAddress}}"></oj-input-text>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-input">Project City</oj-label>
+      <oj-input-text id="text-input" value="{{projectCity}}"></oj-input-text>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-input">Project Zip Code</oj-label>
+      <oj-input-text id="text-input" value="{{projectZipCode}}"></oj-input-text>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-area">Permit Description</oj-label>
+      <oj-text-area id="text-area" style="max-width:75%" value="{{permitDescription}}">
+      </oj-text-area>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-input">Property Owner</oj-label>
+      <oj-input-text id="text-input" value="{{propertyOwner}}"></oj-input-text>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-input">Units</oj-label>
+      <oj-input-text id="text-input" value="{{units}}"></oj-input-text>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-input">Square Foot</oj-label>
+      <oj-input-text id="text-input" value="{{squareFoot}}"></oj-input-text>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-input">Permit Value</oj-label>
+      <oj-input-text id="text-input" value="{{permitValue}}"></oj-input-text>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="select">Stratum</oj-label>
+      <oj-select-one id="stratum" value="{{stratum}}">
+        <oj-option value="Stratum 1">Stratum 1</oj-option>
+        <oj-option value="Stratum 2">Stratum 2</oj-option>
+        <oj-option value="Stratum 3">Stratum 3</oj-option>
+      </oj-select-one>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="date">Permit Received Date</oj-label>
+      <oj-input-date id="date" value='{{receivedDate}}'>
+      </oj-input-date>
+    </div>
+  </div>
+  <br>
+  <hr>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-input">Tract</oj-label>
+      <oj-input-text id="text-input" value="{{tract}}"></oj-input-text>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-input">Block</oj-label>
+      <oj-input-text id="text-input" value="{{block}}"></oj-input-text>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-input">Lot</oj-label>
+      <oj-input-text id="text-input" value="{{lot}}"></oj-input-text>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-input">PCIS Reference No</oj-label>
+      <oj-input-text id="text-input" value="{{pcisRefNo}}"></oj-input-text>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-input">Permit Type</oj-label>
+      <oj-input-text id="text-input" value="{{permitType}}"></oj-input-text>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-input">Permit Subcategory</oj-label>
+      <oj-input-text id="text-input" value="{{permitSubcategory}}"></oj-input-text>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-input">Permit Category</oj-label>
+      <oj-input-text id="text-input" value="{{permitCategory}}"></oj-input-text>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-input">Project Number</oj-label>
+      <oj-input-text id="text-input" value="{{projectNumber}}"></oj-input-text>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-input">Event Code</oj-label>
+      <oj-input-text id="text-input" value="{{eventCode}}"></oj-input-text>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-input">Owner Address</oj-label>
+      <oj-input-text id="text-input" value="{{ownerAddress}}"></oj-input-text>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-input">Owner City</oj-label>
+      <oj-input-text id="text-input" value="{{ownerCity}}"></oj-input-text>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-input">Owner Zip Code</oj-label>
+      <oj-input-text id="text-input" value="{{ownerZipCode}}"></oj-input-text>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-input">Owner Phone Number</oj-label>
+      <oj-input-text id="text-input" value="{{ownerPhoneNumber}}"></oj-input-text>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-input">Owner Email</oj-label>
+      <oj-input-text id="text-input" value="{{ownerEmail}}"></oj-input-text>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-input">Stories</oj-label>
+      <oj-input-text id="text-input" value="{{stories}}"></oj-input-text>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-input">Contractor Name</oj-label>
+      <oj-input-text id="text-input" value="{{contractorName}}"></oj-input-text>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-input">Contractor Address</oj-label>
+      <oj-input-text id="text-input" value="{{contractorAddress}}"></oj-input-text>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-input">Contractor City</oj-label>
+      <oj-input-text id="text-input" value="{{contractorCity}}"></oj-input-text>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-input">Contractor State</oj-label>
+      <oj-input-text id="text-input" value="{{contractorState}}"></oj-input-text>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-input">Contractor Telephone Number</oj-label>
+      <oj-input-text id="text-input" value="{{contractorTelephone}}"></oj-input-text>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-input">License Type</oj-label>
+      <oj-input-text id="text-input" value="{{licenseType}}"></oj-input-text>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-input">License Number</oj-label>
+      <oj-input-text id="text-input" value="{{licenseNumber}}"></oj-input-text>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-input">Principal Name</oj-label>
+      <oj-input-text id="text-input" value="{{principalName}}"></oj-input-text>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="date">License Expiration Date</oj-label>
+      <oj-input-date id="date" value='{{licenseExpirationDate}}'>
+      </oj-input-date>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-input">Use Code</oj-label>
+      <oj-input-text id="text-input" value="{{useCode}}"></oj-input-text>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-input">Proposed Use Code</oj-label>
+      <oj-input-text id="text-input" value="{{proposedUseCode}}"></oj-input-text>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-input">Applicant Name</oj-label>
+      <oj-input-text id="text-input" value="{{applicantName}}"></oj-input-text>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-input">Applicant Business Name</oj-label>
+      <oj-input-text id="text-input" value="{{applicantBusinessName}}"></oj-input-text>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-input">Applicant Relationship</oj-label>
+      <oj-input-text id="text-input" value="{{applicantRelationship}}"></oj-input-text>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-input">Applicant Address</oj-label>
+      <oj-input-text id="text-input" value="{{applicantAddress}}"></oj-input-text>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-input">Applicant City</oj-label>
+      <oj-input-text id="text-input" value="{{applicantCity}}"></oj-input-text>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-input">Applicant Telephone Number</oj-label>
+      <oj-input-text id="text-input" value="{{applicantTelephone}}"></oj-input-text>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-input">Primary Zone</oj-label>
+      <oj-input-text id="text-input" value="{{primaryZone}}"></oj-input-text>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-input">Primary Occupancy Dimensions</oj-label>
+      <oj-input-text id="text-input" value="{{primaryDimensions}}"></oj-input-text>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-input">Primary Occupancy Square Footage</oj-label>
+      <oj-input-text id="text-input" value="{{primarySquareFootage}}"></oj-input-text>
+    </div>
+  </div>
+  <br>
+  <div class="oj-flex">
+    <div class="oj-flex-item">
+      <oj-label for="text-input">Census Tract</oj-label>
+      <oj-input-text id="text-input" value="{{censusTract}}"></oj-input-text>
+    </div>
+  </div>
+  <br>
+  <oj-checkboxset id="discardCheckbox" labelled-by="discard" value="{{discard}}">
+    <oj-option id="discard" value="discard">Discard</oj-option>
+  </oj-checkboxset>
+  <br>
+  <oj-checkboxset id="constructionStatement" labelled-by="construction" value="{{construction}}">
+      <oj-option id="construction" value="construction">Create/Mail New Construction Statement</oj-option>
+    </oj-checkboxset>
+    <br>
+  <div class="oj-sm-odd-cols-12 oj-md-odd-cols-4 oj-flex-items-pad">
+    <div class="oj-flex-item">
+      <oj-button id="btnCancel">Cancel</oj-button>
+      <oj-button class="save" id='save'>Create</oj-button>
+    </div>
+  </div>
+</div>
+</div>

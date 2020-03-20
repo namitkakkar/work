@@ -1,0 +1,41 @@
+{
+    "ActivityList": {
+        "subActivity": [
+            {
+                "id": "Permits",
+                "value": "Update Costs",
+                "label": "Update Costs"
+            },
+            {
+                "id": "Permits",
+                "value": "Electronic Permits",
+                "label": "Electronic Permits"
+            },
+            {
+                "id": "Permits",
+                "value": "Permit Data Entry",
+                "label": "Permit Data Entry"
+            },
+            {
+                "id": "Create Work Unit",
+                "value": "Create Work Unit",
+                "label": "Create Work Unit"
+            },
+            {
+                "id": "Create Work Unit",
+                "value": "Add Work Unit",
+                "label": "Add Work Unit"
+            }
+        ]
+    },
+    "Activity": [
+        {
+            "value": "Create Work Unit",
+            "label": "Create Work Unit"
+        },
+        {
+            "value": "Permits",
+            "label": "Permits"
+        }
+    ]
+}

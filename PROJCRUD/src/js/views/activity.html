@@ -1,0 +1,114 @@
+<div id="section5" style="width: 1px; min-width: 100%;">
+  <div id="popupWrapper">
+    <oj-popup id="addActivityPopup" class="demo-popup" tail="none" position.my.horizontal="center"
+      position.my.vertical="center" position.at.horizontal="center" position.at.vertical="center" position.of="window"
+      position.offset.y="-10" modality="modal" on-oj-animate-start="[[startAnimationListener]]" >
+      <div class="demo-popup-body">
+        <div class="demo-popup-content oj-flex oj-sm-flex-direction-column">
+          <div class="oj-flex-item">
+            <h5 style="font-weight:bold">Edit Work Unit Aggregate</h5>
+          </div><br />
+          <div class="oj-flex-item">
+            <oj-label for="Catgeory" style="font-weight:bold">Select Category</oj-label>
+            <oj-select-one id="select1" style="max-width:20em" options="[[actDetails]]" value="{{selectedChoice}}">
+            </oj-select-one>
+            <oj-label for="Catgeory" style="font-weight:bold">Select Subcategory</oj-label>
+            <oj-select-one id="select2" style="max-width:20em" options="[[filteredItems]]" value="{{selectedItem}}">
+            </oj-select-one>
+          </div>
+          <div class="oj-flex-item">
+            <oj-button id='add' on-oj-action='[[add]]'>Add</oj-button>
+            <oj-button id='cancel' on-oj-action='[[cancel]]'>Cancel</oj-button>
+          </div>
+        </div>
+      </div>
+  </div>
+  <br>
+  </oj-popup>
+  <oj-button id="AddActivity" on-click="[[addActivityListner]]">Add Activity</oj-button>
+</div>
+<br>
+<div class="oj-flex oj-sm-flex-direction-column">
+  <div class="oj-flex-item">
+      <oj-bind-if test="[[activityDataProvider!==undefined]]">
+    <oj-table id="activityTable" aria-label="Departments Table" data='[[activityDataProvider]]' display="grid"
+      selection-mode='{"row": "single", "column": "single"}' columns-default='{"sortable": "enabled"}'
+      columns='{{columnArray}}' style='width: 100%; height:100%;'>
+      <template slot="checkTemplate" data-oj-as="cell">
+        <oj-checkboxset value='[[handleCheckbox(cell.key)]]' on-value-changed='[[checkboxListener]]'
+          class='oj-checkboxset-no-chrome oj-selection-checkbox' :id="[['table_checkboxset' + cell.key]]"
+          :data-row-key="{{cell.row.id}}">
+          <oj-option :id="[['table_checkbox' + cell.key]]" value="Yes"></oj-option>
+        </oj-checkboxset>
+      </template>
+    </oj-table>
+    <script type="text/html" id="activity_erase">
+    <td style="text-align:center">
+        <a href="#">
+        <img src="css/images/erase2-24.png" >
+      </img>
+    </a>
+    </td>
+</script>
+    <script type="text/html" id="activity_edit">
+  <td style="text-align:center">
+      <a href="#">
+      <img src="css/images/edit-ownership.png">
+    </img>
+  </a>
+  </td>
+</script>
+</oj-bind-if>
+    <oj-dialog id="popupactivity" class="activity-popup" tail="none"  style="min-width:800px;max-height: 490px;"
+    dialog-title="[[activityName]]" modality="modeless"  on-oj-animate-start="[[startPopupListener]]">
+      
+      
+      <oj-module config="[[activityPopupModuleConfig]]"></oj-module>
+      <!-- <div class="activity-popup-body oj-flex oj-sm-flex-direction-column" style="width:800px;">
+        <div class="oj-flex-item">
+          <h5 style="font-weight:bold">Activity Number</h5>
+        </div><br />
+      </div>
+      <div class="oj-flex-item">
+        <h3>Selected Activity is : <oj-bind-text value=[[activityName]]></oj-bind-text>
+        </h3>
+      </div>
+      <div class="oj-flex-item">
+        <h3>Selected Activity Number is : <oj-bind-text value=[[activityValue]]></oj-bind-text>
+        </h3>
+      </div>
+      <div class="oj-flex-item">
+        <oj-button id='cancel' on-oj-action='[[close]]'>Close</oj-button>
+      </div> -->
+    </oj-dialog>
+    <script type="text/html" id="activity_name">
+      <td >
+          <!-- <a data-bind="text: $context.row.activity"></a> -->
+        <a id="activityPopup" data-bind="click: $parent.popupListener([[$context.row.activity]])"><oj-bind-text value=[[$context.row.activity]]></oj-bind-text></a>
+      </td>
+</script>
+    <script type="text/html" id="activity_comment">
+  <td>
+    <a data-bind="text: $context.row.comments"></a>
+  </td>
+</script>
+    <script type="text/html" id="activity_datecompleted">
+  <td>
+      <a data-bind="text: $context.row.comments"></a>
+  </td>
+</script>
+    <script type="text/html" id="activity_duration">
+  <td>
+    <a data-bind="text: $context.row.DateCompleted"></a>
+  </td>
+</script>
+    <script type="text/html" id="activity_overtime">
+  <td>
+    <a data-bind="text: $context.row.overTime"></a>
+  </td>
+</script>
+
+  </div>
+
+
+</div>

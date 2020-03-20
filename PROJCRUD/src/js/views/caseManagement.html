@@ -1,0 +1,206 @@
+<!-- <h2>
+  <oj-bind-if test="[[ain!==undefined]]">
+  <oj-bind-text value="[[ain]]"></oj-bind-text>
+  </oj-bind-if>
+</h2>
+<br> -->
+<!-- <div id="section5" style="width: 1px; min-width: 100%;">
+  <div id="popupWrapper">
+    <oj-popup id="addActivityPopup" class="demo-popup" tail="none" position.my.horizontal="center"
+      position.my.vertical="center" position.at.horizontal="center" position.at.vertical="center" position.of="window"
+      position.offset.y="-10" modality="modal" on-oj-animate-start="[[startAnimationListener]]">
+      <div class="demo-popup-body">
+        <div class="demo-popup-content oj-flex oj-sm-flex-direction-column">
+          <div class="oj-flex-item">
+            <h5 style="font-weight:bold">Edit Work Unit Aggregate</h5>
+          </div><br />
+          <div class="oj-flex-item">
+            <oj-label for="Catgeory" style="font-weight:bold">Select Category</oj-label>
+            <oj-select-one id="select1" style="max-width:20em" options="[[actDetails]]" value="{{selectedChoice}}">
+            </oj-select-one>
+            <oj-label for="Catgeory" style="font-weight:bold">Select Subcategory</oj-label>
+            <oj-select-one id="select1" style="max-width:20em" options="[[filteredItems]]" value="{{selectedItem}}">
+            </oj-select-one>
+          </div>
+          <div class="oj-flex-item">
+            <oj-button id='add' on-oj-action='[[add]]'>Add</oj-button>
+            <oj-button id='cancel' on-oj-action='[[cancel]]'>Cancel</oj-button>
+          </div>
+        </div>
+      </div>
+  </div>
+  </oj-popup>
+  <oj-button id="AddActivity" on-click="[[addActivityListner]]">Add Activity</oj-button>
+</div> -->
+<div class="oj-flex oj-sm-flex-direction-column">
+  <div class="oj-flex-item">
+      <oj-module config="[[activityModuleConfig]]"></oj-module>
+    <!-- <oj-table id="activityTable" aria-label="Departments Table" data='[[activityDataProvider]]' display="grid"
+      selection-mode='{"row": "single", "column": "single"}' columns-default='{"sortable": "enabled"}'
+      columns='{{columnArray}}' style='width: 100%; height:100%;'>
+      <template slot="checkTemplate" data-oj-as="cell">
+        <oj-checkboxset value='[[handleCheckbox(cell.key)]]' on-value-changed='[[checkboxListener]]'
+          class='oj-checkboxset-no-chrome oj-selection-checkbox' :id="[['table_checkboxset' + cell.key]]"
+          :data-row-key="{{cell.row.id}}">
+          <oj-option :id="[['table_checkbox' + cell.key]]" value="Yes"></oj-option>
+        </oj-checkboxset>
+      </template>
+    </oj-table>
+    <script type="text/html" id="activity_erase">
+    <td style="text-align:center">
+        <a href="#">
+        <img src="css/images/erase2-24.png" >
+      </img>
+    </a>
+    </td>
+</script>
+    <script type="text/html" id="activity_edit">
+  <td style="text-align:center">
+      <a href="#">
+      <img src="css/images/edit-ownership.png">
+    </img>
+  </a>
+  </td>
+</script>
+    <oj-popup id="popupactivity" class="activity-popup" tail="none" position.my.horizontal="center"
+      position.my.vertical="center" position.at.horizontal="center" position.at.vertical="center" position.of="window"
+      position.offset.y="-10" modality="modal" on-oj-animate-start="[[startPopupListener]]">
+      <div class="activity-popup-body oj-flex oj-sm-flex-direction-column" style="width:800px;">
+        <div class="oj-flex-item">
+          <h5 style="font-weight:bold">Activity Number</h5>
+        </div><br />
+      </div>
+      <div class="oj-flex-item">
+        <h3>Selected Activity is : <oj-bind-text value=[[activityName]]></oj-bind-text>
+        </h3>
+      </div>
+      <div class="oj-flex-item">
+        <h3>Selected Activity Number is : <oj-bind-text value=[[activityValue]]></oj-bind-text>
+        </h3>
+      </div>
+      <div class="oj-flex-item">
+        <oj-button id='cancel' on-oj-action='[[close]]'>Close</oj-button>
+      </div>
+    </oj-popup>
+    <script type="text/html" id="activity_name">
+      <td >
+        <a id="activityPopup" data-bind="click: $parent.popupListener([[$context.row.activity]])"><oj-bind-text value=[[$context.row.activity]]></oj-bind-text></a>
+      </td>
+</script>
+    <script type="text/html" id="activity_comment">
+  <td>
+    <a data-bind="text: $context.row.comments"></a>
+  </td>
+</script>
+    <script type="text/html" id="activity_datecompleted">
+  <td>
+      <a data-bind="text: $context.row.comments"></a>
+  </td>
+</script>
+    <script type="text/html" id="activity_duration">
+  <td>
+    <a data-bind="text: $context.row.DateCompleted"></a>
+  </td>
+</script>
+    <script type="text/html" id="activity_overtime">
+  <td>
+    <a data-bind="text: $context.row.overTime"></a>
+  </td>
+</script>
+
+  </div>
+
+
+</div> -->
+</div>
+
+</div>
+<br>
+<br>
+<oj-module config="[[caseDetailsConfig]]"></oj-module>
+<!-- div id="section6" style="width: 1px; min-width: 100%;">
+  <span><label for="caseDetailsTable"><b>&nbsp;&nbsp;Case Details</b></label></span>
+  <div id="multilvltableDemo" class="oj-flex-item">
+    <oj-label id="label" class="oj-label-inline" for="filter">Filter:</oj-label>
+    <oj-input-text id="filter" placeholder="Type to filter" on-raw-value-changed="[[handleValueChanged]]"
+      value="{{filter}}"></oj-input-text>
+    <oj-button id="clearButton" on-oj-action='[[clearClick]]' display='icons' chroming='half'>
+      <span slot='startIcon' class='oj-fwk-icon oj-fwk-icon-cross03'></span>
+      Clear
+    </oj-button>
+    <br>
+
+    <oj-table id="caseDetailsTable" aria-label="Case Details" data='[[caseTblPgDataProvider]]' selected.row='{{selectedRow}}'
+      on-selected-changed='{{selectedChangedListener}}' selection-mode='{"row": "single", "column": "multiple"}'
+      scroll-policy='loadMoreOnScroll' scroll-policy-options='{"fetchSize": 10}' columns='{{columnArrayDetails}}'
+      style="width:100%">
+      <oj-paging-control id="paging" data='[[caseTblPgDataProvider]]' page-size='10' slot='bottom'></oj-paging-control>
+    </oj-table>
+    <script type="text/html" id="Case_Number">
+      <td>
+         <a id="btnGetWrkUntDtl" data-bind="click:function(data, event){$parent.openWrkUntDialog($context.row.Case_Number,data,event)}">
+          <oj-bind-text value="[[$context.row.Case_Number]]">
+          </oj-bind-text>
+         </a>
+      </td>
+    </script>
+  </div>
+  <div id="wrkUntDlgWrapper">
+    <oj-popup positionAlign="vertical:bottom;horizontal:end"
+      style="width: 90%; top: 431.042px; left: 35.4167px; bottom: auto; right: auto;" id="wrkUntDlg"
+      dialog-title="Work Unit Details" modality="modeless">
+      <div slot="body">
+        <oj-label id="wrkUntlabel" class="oj-label-inline" for="wrkUntFilter">Filter:</oj-label>
+        <oj-input-text id="wrkUntFilter" placeholder="Type to filter"
+          on-raw-value-changed="[[handleWrkUnitValueChanged]]" value="{{wrkUntFilter}}"></oj-input-text>
+        <oj-button id="wrkUntclearButton" on-oj-action='[[clearWrkUnitClick]]' display='icons' chroming='half'>
+          <span slot='startIcon' class='oj-fwk-icon oj-fwk-icon-cross03'></span>
+          Clear
+        </oj-button>
+        <br>
+        <oj-table id="wrkUntDetTbl" aria-label="Work Unit Details" data='[[wrkUnitsTblData]]'
+          selected.row='{{selectedWrkUntRow}}' on-selected-changed='{{selectedWrkUntChangedListener}}'
+          selection-mode='{"row": "single", "column": "multiple"}' scroll-policy='loadMoreOnScroll'
+          scroll-policy-options='{"fetchSize": 10}' columns='{{wrkunittblcolumnArray}}' style="width:100%">
+        </oj-table>
+        <script type="text/html" id="workUnitNumber">
+                <td>
+                   <a id="propListLnk" data-bind="click:function(data, event){$parent.openPropDetailsDialog($context.row.Work_Unit_Number,data,event)}">
+                    <oj-bind-text value="[[$context.row.Work_Unit_Number]]">
+                    </oj-bind-text>
+                   </a>
+                </td>
+              </script>
+      </div>
+      <div slot="footer">
+        <oj-button id="okButton" on-oj-action="[[handleOKClose]]">OK</oj-button>
+      </div>
+    </oj-popup>
+  </div>
+  <!-- prop list dialog 
+  <div id="proplistDlgWrapper">
+      
+    <oj-popup style="width: 90%; top: 431.042px; left: 35.4167px; bottom: auto; right: auto;" id="proplistDlg"
+      dialog-title="Property List Details" modality="modeless">
+      <div slot="body">
+          <oj-label id="propLstlabel" class="oj-label-inline" for="propListFilter">Filter:</oj-label>
+          <oj-input-text id="propListFilter" placeholder="Type to filter" on-raw-value-changed="[[handlePropListFilterValueChanged]]" value="{{propListFilter}}"></oj-input-text>
+          <oj-button id="propListclearButton"
+                    on-oj-action='[[clearPropListClick]]'
+                    display='icons'
+                    chroming='half'>
+              <span slot='startIcon' class='oj-fwk-icon oj-fwk-icon-cross03'></span>
+              Clear
+          </oj-button>
+          <br>
+        <oj-table id="proplistDetTbl" aria-label="Property List Details" data='[[proplistTblData]]'
+          selection-mode='{"row": "single", "column": "multiple"}' scroll-policy='loadMoreOnScroll'
+          scroll-policy-options='{"fetchSize": 10}' columns='{{proplisttblcolumnArray}}' style="width:100%">
+        </oj-table>
+      </div>
+      <div slot="footer">
+        <oj-button id="okButton" on-oj-action="[[handlePropTblOKClose]]">OK</oj-button>
+      </div>
+    </oj-popup>
+  </div>
+</div> -->

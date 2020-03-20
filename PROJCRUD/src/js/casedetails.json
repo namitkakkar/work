@@ -1,0 +1,109 @@
+{
+    "allCases": [
+        {
+            "Case_Number": "C1908-1005339",
+            "Case_Name": "",
+            "Status": "Open",
+            "Created_Date": "01/19/2019",
+            "Work_units": "2",
+            "Remarks": "Add/View",
+            "work_unit": [
+                {
+                    "Work_Unit_Number": "WU1801-1922",
+                    "Work_unit_Type": "New Construction",
+                    "Business_Event_Date": "05/21/2019",
+                    "Property_IDs": "5301-032-029",
+                    "property_list": [
+                        {
+                            "Property_ID": "5301-032-029",
+                            "Property_Type": "New Construction",
+                            "Property_Status": "Active"
+                        }
+                    ]
+                },
+                {
+                    "Work_Unit_Number": "WU1801-5433",
+                    "Work_unit_Type": "Prop193",
+                    "Business_Event_Date": "09/05/2019",
+                    "Property_IDs": "5542-012-028",
+                    "property_list": [
+                        {
+                            "Property_ID": "5542-012-028",
+                            "Property_Type": "Real Property",
+                            "Property_Status": "Active"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Case_Number": "C1908-1005340",
+            "Case_Name": "Standard",
+            "Status": "Deal In Progress",
+            "Created_Date": "02/19/2019",
+            "Work_units": "1",
+            "Remarks": "Edit/View",
+            "work_unit": [
+                {
+                    "Work_Unit_Number": "WU1908-19121",
+                    "Work_unit_Type": "Resale",
+                    "Business_Event_Date": "08/03/2019",
+                    "Property_IDs": "5552-039-051",
+                    "property_list": [
+                        {
+                            "Property_ID": "5552-039-051",
+                            "Property_Type": "Resale",
+                            "Property_Status": "Active"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Case_Number": "C1908-2305354",
+            "Case_Name": "Premium",
+            "Status": "Renovation Progress",
+            "Created_Date": "09/15/2019",
+            "Work_units": "1",
+            "Remarks": "View",
+            "work_unit": [
+                {
+                    "Work_Unit_Number": "WU1908-19121",
+                    "Work_unit_Type": "Resale",
+                    "Business_Event_Date": "08/03/2019",
+                    "Property_IDs": "5552-039-061",
+                    "property_list": [
+                        {
+                            "Property_ID": "5552-039-061",
+                            "Property_Type": "Resale",
+                            "Property_Status": "Active"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Case_Number": "C1908-3305374",
+            "Case_Name": "Economy",
+            "Status": "Ready to move",
+            "Created_Date": "09/19/2019",
+            "Work_units": "1",
+            "Remarks": "View",
+            "work_unit": [
+                {
+                    "Work_Unit_Number": "WU1908-19221",
+                    "Work_unit_Type": "Resale",
+                    "Business_Event_Date": "08/03/2019",
+                    "Property_IDs": "5552-039-092",
+                    "property_list": [
+                        {
+                            "Property_ID": "5552-039-092",
+                            "Property_Type": "Resale",
+                            "Property_Status": "Active"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
