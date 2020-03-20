@@ -1,0 +1,103 @@
+<div class="oj-flex oj-flex-items-pad oj-sm-flex-direction-column">
+  <div class="oj-flex-item">
+    <div id="topBtns" class="oj-flex oj-sm-justify-space-between">
+      <div class="oj-flex-item">
+        <oj-button id="flagIconButton">
+          <span slot="startIcon">
+            <img src="css/images/flag_icon.png" style="width:10px;height:10px;" />
+          </span>
+        </oj-button>
+        <oj-button id='holdButton'>Hold</oj-button>
+        <oj-button id='rescheduleButton'>Reschedule</oj-button>
+        <oj-button id='routeToButton'>Route To</oj-button>
+        <oj-bind-text value="[[nextAssignmentPool]]"></oj-bind-text>
+      </div>
+      <div id="globalAction" class="oj-flex oj-sm-flex-items-end oj-sm-justify-space-between">
+        <div class="oj-flex-item">
+          <oj-button id='submitButton' on-oj-action="[[onSubmit]]">Submit
+          </oj-button>
+          <oj-button id='saveButton' on-oj-action="[[onSave]]">Save
+          </oj-button>
+          <oj-button id='unclaimButton'>Claim
+          </oj-button>
+          <oj-button id='closeButton'>Close
+          </oj-button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="oj-flex oj-sm-flex-direction-column">
+  <div class="oj-flex-item" style="padding:10px;">
+    <a style="cursor:pointer;" id="btnAggregate">Edit Work Unit Aggregate</a></p>
+  </div>
+  <div class="oj-flex-item">
+
+  </div>
+  <div class="oj-flex-item">
+
+    <oj-bind-text value="Property ID - "></oj-bind-text>
+
+    <span>(<oj-bind-text value="[[ainDataSource().length]]"></oj-bind-text>)</span>
+
+
+    <oj-combobox-one id="combobox1" style="max-width:20em" value="{{selectedAIN}}" options="[[ainDataSource]]">
+
+    </oj-combobox-one>
+  </div>
+
+  <div class="oj-flex-item">
+    <div class="oj-flex oj-sm-flex-items-initial oj-sm-justify-content-flex-end">
+      <div class="oj-flex-item">
+        <oj-button style="cursor:pointer;" id="btnAddRemarks" data-bind="click: addRemarks">Work Unit Notes</oj-button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+<oj-popup id="remarksPopup" class="demo-popup" tail="none" position.my.horizontal="center" position.my.vertical="center"
+  position.at.horizontal="center" position.at.vertical="center" position.of="window" position.offset.y="-10"
+  modality="modal">
+  <div class="demo-popup-body" style="width:1300px;height:700px;overflow-y:scroll">
+    <div class="demo-popup-content">
+      <div style="min-height:600px;">
+        <oj-module config="[[remarksPopupModuleConfig]]"></oj-module>
+      </div>
+      <div style="float: right;margin-top:20px;margin-right:10px;">
+        <oj-button id="cancelbtn" on-oj-action="[[cancelListener]]">Cancel</oj-button>
+      </div>
+    </div>
+  </div>
+</oj-popup>
+
+
+</div>
+<div class="oj-flex-item" style="font-weight:bold">
+  <label for="wrkUnitLbl"><b>&nbsp;&nbsp;Work Unit#:</b></label>
+  <oj-bind-if test="[[task().workUnitDetailsList().length>0]]">
+    <oj-bind-text value="[[workUnitNumber]]"></oj-bind-text>
+    <span>-</span>
+    <oj-bind-text value="[[task().workUnitDetailsList()[0].WORK_UNIT_TYPE]]"></oj-bind-text>
+  </oj-bind-if>
+</div>
+<div class="oj-flex-item">
+  <oj-table id='table' selection-mode='{"row": "single", "column": "multiple"}' scroll-policy='loadMoreOnScroll'
+    data='[[workUnitDataProvider]]' columns="[[workUnitColumnArray]]"
+    style='width: 100%;padding-top:10px;padding-bottom:10px;'>
+  </oj-table>
+</div>
+
+<div class="oj-flex oj-flex-items-pad oj-sm-flex-direction-column">
+  <div class="oj-flex-item">
+
+  </div>
+  <div class="oj-flex-item" style="min-height:300px;">
+    <oj-module config="[[moduleConfig]]" role="main">
+    </oj-module>
+  </div>
+</div>

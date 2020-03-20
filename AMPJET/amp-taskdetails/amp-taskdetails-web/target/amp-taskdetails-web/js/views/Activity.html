@@ -1,0 +1,102 @@
+<div class="oj-flex oj-sm-flex-direction-column">
+
+  <div class="oj-flex-item">
+    <div id="dialogWrapper">
+      <oj-dialog style="display:none" id="addActivityDialog" dialog-title="Add Activity">
+        <div slot="body">
+          <oj-label for="group">Group</oj-label>
+          <oj-select-single id="group" style="max-width:20em" 
+                value="{{group}}" data="[[groupDP]]">
+          </oj-select-single>
+          <oj-label for="selactivity">Activity</oj-label>
+          <oj-select-single id="selactivity" style="max-width:20em" 
+                value={{activity}} data="[[activityDP]]">
+          </oj-select-single>
+        </div>
+        <div slot="footer">
+          <oj-button id="okButton" on-oj-action="[[close]]">Cancel</oj-button>
+          <oj-button id="okButton" on-oj-action="[[addActivity]]">Add</oj-button>
+        </div>
+      </oj-dialog>
+    </div>
+    <oj-button id="AddActivity" on-click="[[openActivity]]">Add New Activity</oj-button>
+  </div>
+  
+  <div class="oj-flex-item">
+    <div class="oj-flex-item">
+      <oj-table id='table' selection-mode='{"row": "single", "column": "multiple"}' scroll-policy='loadMoreOnScroll'
+        data='[[activityDataProvider]]' columns="[[activityColumnArray]]"
+        style='width: 100%;padding-top:10px;padding-bottom:10px;'>
+      </oj-table>
+      <script type="text/html" id="activity_erase">
+              <td style="text-align:center">
+                  <a href="#">
+                  <img src="css/images/erase2-24.png" >
+                </img>
+              </a>
+              </td>
+          </script>
+      <script type="text/html" id="activity_edit">
+            <td style="text-align:center">
+                <a href="#">
+                <img src="css/images/edit-ownership.png">
+              </img>
+            </a>
+            </td>
+          </script>
+      </oj-bind-if>
+      <script type="text/html" id="activity_name">
+        <td>
+          <oj-bind-if test=[[!$context.row.UI_RESOURCE_ID]]>
+            <span><oj-bind-text value=[[$context.row.ACTIVITY]]></oj-bind-text></span>
+          </oj-bind-if>
+          <oj-bind-if test=[[$context.row.UI_RESOURCE_ID]]>
+            <a href="#" on-click="[[() => $parent.editAdvanceActivity($context.row.ACTIVITY_INST_ID, $context.row.ROW_ID)]]" >
+              <oj-bind-text value=[[$context.row.ACTIVITY]]></oj-bind-text>
+          </oj-bind-if> 
+        </td>
+      </script>
+      <script type="text/html" id="activity_comment">
+            <td>
+              
+            </td>
+          </script>
+      <script type="text/html" id="activity_datecompleted">
+            <td>
+               
+            </td>
+          </script>
+      <script type="text/html" id="activity_duration">
+            <td>
+              
+            </td>
+          </script>
+      <script type="text/html" id="activity_overtime">
+            <td>
+              
+            </td>
+          </script>
+    </div>
+  </div>
+
+  <div id="advanceActivityDialogWrapper">
+    <oj-dialog style="display:none;width: 70vw; height: 60vh;" id="editAdvActivityDialog">
+      <div slot="header">
+         <h1 id="advActivityTitle" class="oj-dialog-title">
+         </h1>
+      </div>
+      <div slot="body">
+        <oj-module role="main" config="[[advActivityModuleConfig]]"><oj-module>
+      </div>
+      <div slot="footer">
+        <oj-button id="applyButton" on-oj-action="[[prepareCostApproachPayload]]">
+          Apply
+        </oj-button>
+        <oj-button id="clsButton" on-oj-action="[[closeAdvActivity]]">
+          Close
+        </oj-button> 
+      </div>
+    </oj-dialog>
+   </div> 
+
+</div>

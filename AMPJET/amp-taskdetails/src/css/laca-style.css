@@ -1,0 +1,32 @@
+.banner{
+    background-color:black;
+    padding:10px;
+}
+.logoImg{
+    max-width: 285px;
+    min-width: 230px;
+    max-height: none;
+    margin-left: 15px;
+}
+.userImg {
+    width: 30px;
+    height: 30px;
+}
+.oj-table-column-header-cell{
+    color:white !important;
+}
+.oj-button-button{
+    background-color:  white !important;
+}
+.oj-table-header, .oj-table:not(.oj-focus) .oj-table-column-header-cell.oj-selected, .oj-table-header .oj-selected, .oj-table-header .oj-focus, .oj-table-header .oj-hover{
+    background-color: #28398e !important;
+}
+.mainBody{   
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+.oj-label label{
+    color: rgba(0, 0, 0, 1) !important;
+}

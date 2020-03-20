@@ -1,0 +1,27 @@
+{
+  "name": "amp-common-utils",
+  "version": "1.0.0",
+  "description": "AMP common JavaScript shared utilities",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "prepare": "npm run build",
+    "build": "webpack-cli",
+    "pub": "npm publish --registry http://localhost:4873"
+  },
+  "files": [
+    "lib"
+  ],
+  "author": "",
+  "devDependencies": {
+    "@types/jquery": "^3.3.31",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.4",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
+}

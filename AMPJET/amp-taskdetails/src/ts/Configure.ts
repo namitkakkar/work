@@ -1,0 +1,4 @@
+// export const SERVICE_SOA_BASE_URL = "$$SERVICE_SOA_BASE_URL$$";
+// export const SERVICE_OSB_BASE_URL = "$$SERVICE_OSB_BASE_URL$$";
+// export const SERVICE_ORDS_BASE_URL = "$$SERVICE_ORDS_BASE_URL$$";
+// export const SERVICE_OHS_BASE_URL = "$$SERVICE_OHS_BASE_URL$$";

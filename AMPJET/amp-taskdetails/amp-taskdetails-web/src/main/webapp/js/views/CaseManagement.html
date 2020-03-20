@@ -1,0 +1,39 @@
+<div class="oj-flex oj-sm-flex-direction-column">
+    <div class="oj-flex-item">
+        <oj-navigation-list edge="top" style="width:100%;margin-top:10px;margin-bottom:10px;" selection="{{stage}}"
+            on-selection-changed="[[stageChangeAction]]">
+            <ul>
+                <oj-bind-for-each data="[[stageLinks]]">
+                    <template>
+                        <li :id="[[$current.data.label]]">
+                            <a style="font-weight:bold">
+                                <oj-bind-text value="[[$current.data.label]]"></oj-bind-text>
+                            </a>
+                        </li>
+                    </template>
+                </oj-bind-for-each>
+            </ul>
+        </oj-navigation-list>
+    </div>
+    <div class="oj-flex-item">
+        <div class="oj-flex">
+            <div class="oj-flex-item">
+                <oj-module config="[[activityModuleConfig]]">
+                </oj-module>
+            </div>
+        </div>
+    </div>
+
+    <!--- Case Management Section -->
+    <oj-bind-if test="[[stage()=='CaseManagement']]">
+        Case Management Load
+    </oj-bind-if>
+
+    <oj-bind-if test="[[stage()=='RecordMaintainance']]">
+        RecordMaintainance Load
+    </oj-bind-if>
+
+    <oj-bind-if test="[[stage()=='RecordMaintainance']]">
+        RecordMaintainance Load
+    </oj-bind-if>
+</div>

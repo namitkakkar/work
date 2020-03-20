@@ -1,0 +1,8 @@
+amp-selectone-choice:not(.oj-complete){
+  visibility: hidden;
+}
+
+amp-selectone-choice{
+	min-height: 50px;
+	width: 50px;
+}

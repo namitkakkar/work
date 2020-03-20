@@ -1,0 +1,77 @@
+<div class="oj-hybrid-padding">
+  <h1>Work Unit Notes </h1>
+
+  <div id="popupWrapper">
+    <oj-button id="addRemarksbtnGo" on-oj-action="[[openListener]]">Add Notes</oj-button>
+    <oj-bind-if test="[[visibleRemarksFlag]]">
+      <oj-label for="it1" name="it1"></oj-label>
+      <!-- <oj-input-text id="it1" value="{{remarksTxtVal}}"></oj-input-text> -->
+      <br><br>
+      <oj-text-area id="it1" value="{{remarksTxtVal}}" style="max-width:80%"></oj-text-area>
+    </oj-bind-if>
+  </div>
+
+  <br><br>
+  <oj-bind-if test="[[visibleRemarksFlag]]">
+    <oj-button id="savebtn" on-oj-action="[[saveRemarksListener]]">Save</oj-button>
+  </oj-bind-if>
+ 
+  <div>
+
+
+  </div>
+  <div class="oj-flex-item" style="font-weight:bold">
+    <label for="wrkUnitLbl"><b>&nbsp;&nbsp;Notes&nbsp;&nbsp;(</b></label>
+    <oj-bind-text value="[[noteslength]]"></oj-bind-text>
+    <label for="wrkUnitLbl"><b>)</b></label>
+  </div>
+
+      
+  <div id='tableContainer' class="demo-padding demo-container">
+    <!-- <oj-table id="table" aria-label="Employee Table" data='[[remarksDataObservable]]'
+          selection-mode='{"row": "single", "column": "multiple"}' scroll-policy='loadMoreOnScroll'
+          scroll-policy-options='{"fetchSize": 10}' columns-default='{"sortable": "enabled"}' columns='[
+          
+            {"headerText": "Created By", "field": "CREATED_BY"},
+            {"headerText": "Date", "field": "CREATED_DATE"},
+            {"headerText": "ID", "field": "REMARKS_ID"},
+            {"headerText": "Remarks", "field": "REMARKS"},
+            {"headerText": "Created User","field": "CREATED_USER"},
+            {"headerText": "Subject","field": "REMARKS_SUBJECT"}
+                         
+            ]' style='width: 1300px; height:500px;'>
+         
+        </oj-table> -->
+
+    <oj-list-view id="listview" aria-label="simple list" data="[[remarksDataObservable]]" style="min-height:300px;">
+      <template slot="itemTemplate" data-oj-as="item">
+        <!-- <span class="avatar" data-bind="style: { backgroundImage: 'url(\'../images/dvt/' + item.data.id + '.png\')' }"></span> -->
+        <div class="container">
+          <div>
+            <b>
+              <oj-bind-text value=" By: "></oj-bind-text>
+              <span class="name">
+                <oj-bind-text value="[[item.data.CREATED_BY]]"></oj-bind-text>
+              </span>
+              <oj-bind-text value="  ( "></oj-bind-text>
+              <oj-bind-text value="[[item.data.CREATED_USER]] "></oj-bind-text>
+              <oj-bind-text value="  ) "></oj-bind-text>
+            </b>
+            <oj-bind-text value="  ( "></oj-bind-text>
+            <oj-bind-text value="[[item.data.CREATED_DATE]] "></oj-bind-text>
+            <oj-bind-text value="  ) "></oj-bind-text>
+
+          </div>
+          <div>
+            <br>
+            <span class="">
+              <oj-bind-text value="[[item.data.REMARKS]]"></oj-bind-text>
+            </span>
+          </div>
+
+
+        </div>
+      </template>
+    </oj-list-view>
+   
+  </div>

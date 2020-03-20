@@ -1,0 +1,26 @@
+{
+  "name": "amp-taskdetails",
+  "version": "1.0.0",
+  "description": "An Oracle JavaScript Extension Toolkit(JET) web app",
+  "scripts": {
+    "test": "jest --preset ts-jest --coverage --collectCoverageFrom src/ts/**/*.ts --collectCoverageFrom=!src/ts/viewModels/*.ts --collectCoverageFrom=!src/ts/*.ts --setupFiles ./test-env.ts --testTimeout=20000",
+    "prebuild": "sonar-scanner  && echo 'Sonar Report executed.'",
+    "build": "(npm test || true) && ojet build --release",
+    "postbuild": "cd amp-taskdetails-web && mvn package"
+  },
+  "dependencies": {
+    "@oracle/oraclejet": "~8.0.0",
+    "@types/jquery": "^3.3.31"
+  },
+  "devDependencies": {
+    "@oracle/oraclejet-tooling": "~8.0.0",
+    "@types/jest": "^24.9.1",
+    "jest": "^25.1.0",
+    "ts-jest": "^25.0.0",
+    "typescript": "^3.7.4"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "private": true
+}

@@ -1,0 +1,11 @@
+{
+    "wuid" : "1546",
+    "remarksid" : "693",
+    "taskid" : "09f19c6e-7472-4417-96d0-157db414637a",
+    "serviceurl" : "http://amp-ate1-soa.assessor.lacounty.gov",
+    "falseserviceurl" : "http://amp-ate1-soa.assessor.lacounty.gov1",
+    "osburl" : "http://amp-ate1-osb.assessor.lacounty.gov",
+    "falseosburl" : "http://amp-ate1-osb.assessor.lacounty.gov1",
+    "ordsurl" : "http://iampwtt101.assessor.lacounty.gov:7780",
+    "falseordsurl" : "http://iampwtt101.assessor.lacounty.gov1:7780"
+}

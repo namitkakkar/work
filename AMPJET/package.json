@@ -1,0 +1,16 @@
+{
+  "name": "ampjet",
+  "version": "1.0.0",
+  "description": "Parent project to build sub-modules",
+  "main": "index.js",
+  "config": {
+	"ate1": "http://amp-ate1-soa.assessor.lacounty.gov-$$-http://amp-ate1-osb.assessor.lacounty.gov",
+	"adev2": "http://iampwtd201.assessor.lacounty.gov:7778"
+  },
+  "scripts": {
+    "build:amp-taskdetails:local": "cd amp-taskdetails && npm run build",
+	"build:amp-taskdetails:ate1": "npm run build --prefix amp-taskdetails -- --user-options=http://amp-ate1-soa.assessor.lacounty.gov-$$-http://amp-ate1-osb.assessor.lacounty.gov-$$-http://iampwtt101.assessor.lacounty.gov:7778"
+  },
+  "author": "",
+  "license": "ISC"
+}

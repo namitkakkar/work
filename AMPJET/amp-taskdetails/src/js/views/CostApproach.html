@@ -1,0 +1,20 @@
+<div class="demo-padding demo-container">
+    <oj-form-layout max-columns="3" direction="row">
+        <oj-input-text value="[[activityName]]" label-hint="Activity Name" readonly="true"></oj-input-text>
+        <oj-select-single id="eventType" label-hint="Event Type" value="{{eventType}}"
+                          data="[[browsersDP]]">
+        </oj-select-single>
+        <oj-input-date id="valDate" label-hint="Valuation Date" value="{{valuationDate}}"></oj-input-date>
+        
+        <oj-input-text value="{{landValue}}" label-hint="Land Value"></oj-input-text>
+        <oj-input-text value="{{improvementValue}}" label-hint="Improvement Value"></oj-input-text>
+        <oj-input-text value="[[totalRealProperty]]" label-hint="Real Property Total" disabled></oj-input-text>
+
+        <oj-input-text value="{{ppValue}}" label-hint="PP Value" ></oj-input-text>
+        <oj-input-text value="{{fixtureValue}}" label-hint="Fixture Value"></oj-input-text>
+        <oj-input-text value="[[fixtureTotal]]" label-hint="PP & Fixture Total" disabled></oj-input-text>
+    </oj-form-layout>
+    
+</div>
+
+
