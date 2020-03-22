@@ -1,0 +1,37 @@
+<!--
+ Copyright (c) 2014, 2019, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+<div class="oj-hybrid-padding">
+
+    <h1>Calculator</h1></span></span>
+    <div class="oj-hybrid-padding">
+    
+      <div>
+          Do the calculation here.
+          
+          <div>
+           
+            <br><br>
+            <oj-label for="text-input">NUMBER 1: </oj-label>
+        <oj-input-text id="text-input" value="{{num1}}"></oj-input-text>
+  
+        <oj-label for="text-input2">NUMBER 2: </oj-label>
+        <oj-input-text id="text-input2" value="{{num2}}"></oj-input-text>
+  
+        <oj-label for="text-input3">FINAL : </oj-label>
+        <oj-input-text id="text-input3" value="{{finalNum}}"></oj-input-text>
+  
+        <br><br>
+      <oj-button id="btn1" on-oj-action="[[(e) => callAction(e, 'sum')]]">SUM</oj-button>
+      <oj-button id="btn2" on-oj-action="[[(e) => callAction(e, 'sub')]]">SUBTRACT</oj-button>
+      <oj-button id="btn3"on-oj-action="[[(e) => callAction(e, 'mul')]]">MULTIPLY</oj-button>
+      <oj-button id="btn4" on-oj-action="[[(e) => callAction(e, 'div')]]">DIVIDE</oj-button>
+  
+          </div>
+      </div>
+    
+   
+      
+  </div>
+</div>

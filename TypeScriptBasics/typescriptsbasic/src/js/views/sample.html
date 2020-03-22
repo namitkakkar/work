@@ -1,0 +1,141 @@
+<!--
+ Copyright (c) 2014, 2019, Oracle and/or its affiliates.
+ The Universal Permissive License (UPL), Version 1.0
+ -->
+
+ <oj-accordion id="accordionPage" data-oj-binding-provider="none">
+    <oj-collapsible id="c1"  title="Calculator">
+      <span slot="header"><span><span></span>   <h1>Calculator</h1></span></span>
+      <div class="oj-hybrid-padding">
+      
+        <div>
+            Do the calculation here.
+            
+            <div>
+             
+              <br><br>
+              <oj-label for="text-input">NUMBER 1: </oj-label>
+          <oj-input-text id="text-input" value="{{num1}}"></oj-input-text>
+    
+          <oj-label for="text-input2">NUMBER 2: </oj-label>
+          <oj-input-text id="text-input2" value="{{num2}}"></oj-input-text>
+    
+          <oj-label for="text-input3">FINAL : </oj-label>
+          <oj-input-text id="text-input3" value="{{finalNum}}"></oj-input-text>
+    
+          <br><br>
+        <oj-button id="btn1" on-oj-action="[[(e) => callAction(e, 'sum')]]">SUM</oj-button>
+        <oj-button id="btn2" on-oj-action="[[(e) => callAction(e, 'sub')]]">SUBTRACT</oj-button>
+        <oj-button id="btn3"on-oj-action="[[(e) => callAction(e, 'mul')]]">MULTIPLY</oj-button>
+        <oj-button id="btn4" on-oj-action="[[(e) => callAction(e, 'div')]]">DIVIDE</oj-button>
+    
+            </div>
+        </div>
+      </div>
+      </oj-collapsible>
+      <oj-collapsible id="c1"  title="TABLE">
+        <span slot="header"><span><span></span>   <h1>TABLE</h1></span></span>
+        <div class="oj-hybrid-padding">
+  
+          <div id='tableContainer' class='oj-xl-8 oj-lg-8 oj-md-8 oj-flex-item'>
+            <oj-table id="table" aria-label="Departments Table"
+            selection-mode.row="single" on-first-selected-row-changed='[[selectionHandler]]'
+            edit-mode='rowEdit'
+        
+                    data='[[deptDataProvider]]'
+                    columns-default='{"sortable": "enabled"}' 
+                    
+                    columns='[{"headerText": "Department Id", 
+                            "field": "DepartmentId"},
+                            {"headerText": "Department Name", 
+                            "field": "DepartmentName"},
+                            {"headerText": "Location Id", 
+                            "field": "LocationId"},
+                            {"headerText": "Manager Id", 
+                            "field": "ManagerId"},
+                            {"headerText": "Action",
+                                 "headerStyle": "min-width: 10em; max-width: 10em; width: 10em; text-align: center;",
+                                 "style":"min-width: 10em; max-width: 10em; width: 10em; padding-top: 0px; padding-bottom: 0px; text-align: center;",
+                                 "template": "actionTemplate"}]'
+                    style='width: 100%; height:100%;'>
+  
+                    <template slot="actionTemplate" data-oj-as="cell">
+                     
+                     
+          <oj-button id='updateButton' on-oj-action='[[updateRow]]'>Edit</oj-button>   
+                  
+                     
+                    </template>
+            </oj-table>
+            
+            <div id="noDataDiv" class='no-data-container'>
+                <span>No data available. Please use the form controls to create a new row.</span>
+            </div>
+        </div>
+  
+       
+  
+          <oj-popup id="activityPopUp" class="activity-popup" tail="none" position.my.horizontal="center" position.my.vertical="center"
+    position.at.horizontal="center" position.at.vertical="center" position.of="window" position.offset.y="-10"
+    modality="modal">
+    <div class="demo-popup-body" style="width:700px;height:400px;overflow-y:scroll">
+      <div class="demo-popup-content">
+        <div style="min-height:300px;">
+        
+   <!-- <oj-validation-group valid="{{groupValid}}"> -->
+      <div class="oj-flex oj-flex-items-pad">
+          <div class="oj-flex-item deprecated-col-default-width">
+              <oj-label for="departmentIdInput">Department Id</oj-label>
+          </div>
+          <div class="oj-flex-item deprecated-col-default-width">
+              <oj-input-number id="departmentIdInput" max="2000" min="0" step="1" 
+                              value="{{inputDepartmentId}}"></oj-input-number>
+          </div>
+      </div>     
+      <div class="oj-flex oj-flex-items-pad">
+          <div class="oj-flex-item deprecated-col-default-width">
+              <oj-label for="departmentNameInput">Department Name</oj-label>
+          </div>
+          <div class="oj-flex-item deprecated-col-default-width">
+          <oj-input-text id="departmentNameInput" value="{{inputDepartmentName}}"></oj-input-text>
+          </div>
+      </div>             
+      <div class="oj-flex oj-flex-items-pad">
+          <div class="oj-flex-item deprecated-col-default-width">
+              <oj-label for="locationIdInput">Location Id</oj-label>
+          </div>
+          <div class="oj-flex-item deprecated-col-default-width">
+          <oj-input-number id="locationIdInput" max="300" min="0" step="1" 
+                              value="{{inputLocationId}}"></oj-input-number>
+          </div>
+      </div>     
+      <div class="oj-flex oj-flex-items-pad">
+          <div class="oj-flex-item deprecated-col-default-width">
+              <oj-label for="managerIdInput">Manager Id</oj-label>
+          </div>
+          <div class="oj-flex-item deprecated-col-default-width">
+          <oj-input-number id="managerIdInput" max="300" min="0" step="1" 
+                              value="{{inputManagerId}}"></oj-input-number>  
+          </div>
+      </div> 
+        </div>
+        <div style="float: right;margin-top:20px;margin-right:10px;">
+          <oj-button id="cancelbtn" on-oj-action="[[saveListener]]">Save</oj-button>
+        </div>
+      </div>
+    </div>
+  </oj-popup>
+  
+          <div class="oj-flex oj-flex-items-pad">
+          <oj-button id='addbutton' on-oj-action='[[addRow]]'>Create</oj-button>
+          <!-- <oj-button id='updateButton' on-oj-action='[[updateRow]]'>Update</oj-button>    -->
+          <oj-button id='removeButton' on-oj-action='[[removeRow]]'>Remove</oj-button>
+          <oj-button id='removeAllButton' on-oj-action='[[removeAllRows]]'>Remove All</oj-button>
+          </div>
+      <!-- </oj-validation-group>  -->
+  
+          </div>
+          </oj-collapsible>
+      </oj-accordion>
+   
+    
